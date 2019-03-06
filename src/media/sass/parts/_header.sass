@@ -1,0 +1,259 @@
+.header
+	+box
+	display: flex
+	flex-direction: column
+	min-width: 320px
+	height: 100vh
+	min-height: 800px
+	overflow: hidden
+	padding: 20px 80px 40px
+	+Lucida
+	color: #FFFFFF
+	background:
+		color: #6e7881
+		image: inline("bkg.jpg")
+		repeat: no-repeat
+		position: center
+		size: cover
+	+retina
+		background:
+			image: inline("bkg@2x.jpg")
+	._popup-opened &
+		filter: blur(5px)
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 100%
+		//max-width: 1120px
+		margin: 0 auto
+		&:nth-of-type(2)
+			flex-grow: 1
+		&:last-of-type
+			justify-content: flex-end
+	&__content
+		position: relative
+	&__title
+		max-width: 780px
+		font-size: 128px
+		font-weight: 400
+		line-height: 1.1
+	&__description
+		position: absolute
+		bottom: 80px
+		right: 40px
+		font-size: 16px
+	+max-screen($breakpoint-md)
+		min-height: 768px
+		padding: 20px 65px 80px
+	+max-screen($breakpoint-sm)
+		min-height: 375px
+		padding: 10px 55px 15px
+		&__title
+			font-size: 36px
+		&__description
+			position: static
+			font-size: 13px
+	+max-screen($breakpoint-xs)
+		min-height: 640px
+		padding: 20px
+		&__title
+			font-size: 56px
+	+max-screen(375px)
+		&__title
+			font-size: 48px
+
+._accent
+	color: $accent
+
+.logo
+	width: 150px
+	+max-screen($breakpoint-md)
+		width: 120px
+
+.btn
+	@extend .animated
+	padding: 15px 20px
+	border:
+		width: 0
+		radius: 5px
+	+Lucida
+	color: #FFFFFF
+	font-size: 16px
+	background-image: linear-gradient(to right top, $accent, #FFAA33)
+	&:hover
+		cursor: pointer
+		box-shadow: inset 0 1px 3px 0 rgba(#000,.5)
+	&:active,
+	&:focus
+		box-shadow: 0 0 0 1px #D0D0D0, inset 0 1px 3px 0 rgba(#000, .5)
+		outline: none
+	+max-screen($breakpoint-md)
+		padding: 10px 8px
+	+max-screen($breakpoint-sm)
+		padding: 5px 10px
+		font-size: 14px
+
+.contact-us
+	font-size: 15px
+	svg
+		width: 11px
+		height: 11px
+		margin-right: 4px
+	&__link
+		@extend .animated
+		font-size: 16px
+		&:hover,
+		&:active,
+		&:focus
+			color: $accent
+			text-decoration: underline
+	+max-screen($breakpoint-sm)
+		font-size: 8px
+		svg
+			width: 6px
+			height: 6px
+		&__link
+			font-size: 9px
+
+.slider
+	+max-screen($breakpoint-sm)
+		display: flex
+		margin-bottom: 10px
+	+max-screen($breakpoint-xs)
+		flex-direction: column
+
+.slider-top
+	display: flex
+	max-width: 80vw
+	padding: 0 35px 20px
+	margin-bottom: 30px
+	border-bottom: 1px solid rgba(#FFF, 0.2)
+	+max-screen($breakpoint-sm)
+		flex: 0 0 auto
+		width: 160px
+		padding: 0 5px 0 0
+		margin-bottom: 0
+		border-bottom: 0
+		border-right: 1px solid rgba(#FFF, 0.2)
+	+max-screen($breakpoint-xs)
+		border-right: none
+		margin-bottom: 30px
+
+.slide
+	+box
+	max-width: 80vw
+	padding: 0 35px
+	&__content
+		display: flex
+	&__name
+		flex: 0 0 auto
+		max-width: 190px
+		width: 18%
+		margin-right: 30px
+		font-size: 14px
+		color: $accent
+		white-space: nowrap
+	&__title
+		flex: 1 0 auto
+		max-width: 335px
+		width: 32%
+		margin-right: 30px
+		font-size: 24px
+		line-height: 1.333
+		font-weight: 400
+	&__text
+		font-size: 16px
+		line-height: 1.7
+	+max-screen($breakpoint-lg)
+		&__name
+			font-size: 12px
+		&__title
+			font-size: 21px
+		&__text
+			font-size: 12px
+	+max-screen($breakpoint-sm)
+		max-width: 60vw
+		height: 100%
+		padding: 20px 0 0 10px
+		&__content
+			flex-direction: column
+			height: 100%
+		&__name
+			display: none
+		&__title
+			flex: 0 0 auto
+			max-width: none
+			width: 100%
+			margin-right: 0
+			margin-bottom: 10px
+			font-size: 18px
+		&__text
+			max-width: none
+			width: 100%
+			font-size: 13px
+	+max-screen($breakpoint-xs)
+		max-width: 90vw
+		padding: 15px 0 0
+		&__title
+			&:after
+				content: ""
+				display: block
+				margin: 10px 0
+				border-bottom: 1px solid rgba(#FFF, 0.2)
+
+.slick-dots
+	padding: 0 35px
+
+.slider-arrows
+	display: flex
+	align-items: center
+	flex: 0 0 auto
+	max-width: 190px
+	width: 17%
+	margin-right: 30px
+	+max-screen($breakpoint-sm)
+		position: absolute
+		left: 180px
+		font-size: 11px
+		color: $accent
+		font-weight: bold
+		&:after
+			content: '/05'
+			display: inline-block
+			color: #FFFFFF
+			font-size: 8px
+	+max-screen($breakpoint-xs)
+		left: 0
+		top: 130px
+
+.slider-arrow
+	+max-screen($breakpoint-sm)
+		display: none
+
+.slider-titles
+	display: flex
+	justify-content: space-between
+	flex: 1 0 auto
+	font-size: 14px
+	+max-screen($breakpoint-md)
+		font-size: 12px
+	+max-screen($breakpoint-sm)
+		flex-direction: column
+		align-items: flex-end
+		justify-content: center
+	+max-screen($breakpoint-xs)
+		align-items: flex-start
+
+.slider-title
+	@extend .animated
+	@extend .no-select
+	cursor: pointer
+	&._active
+		color: $accent
+	+max-screen($breakpoint-sm)
+		&:not(:last-child)
+			margin-bottom: 10px
+	+max-screen($breakpoint-xs)
+		&:not(:last-child)
+			margin-bottom: 5px

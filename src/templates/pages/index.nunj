@@ -1,0 +1,8 @@
+{% extends "../ext/base.nunj" %}
+
+{% block title %}Temporary page {{ super() }}{% endblock title %}
+
+{% block content %}
+	{% include '../parts/_header.nunj' %}
+	{% include '../parts/_popup.nunj' %}
+{% endblock content %}

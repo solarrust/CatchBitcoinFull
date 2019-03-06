@@ -1,0 +1,83 @@
+.popups-wrapper
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	padding: 20px 80px 40px
+	text-align: center
+	opacity: 0.84
+	background-image: linear-gradient(to top left, rgba(#A1773D, 0.8) 0%, rgba(#0A0500, 0.8) 83%)
+	z-index: 1000
+	overflow: auto
+	white-space: nowrap
+	font-size: 0
+	+box
+	&:before
+		display: inline-block
+		position: relative
+		content: ' '
+		width: 0
+		height: 100%
+		vertical-align: middle
+	&__content
+		+box
+		position: relative
+		display: inline-block
+		width: 100%
+		height: 100%
+		color: #FFF
+		text-align: left
+		vertical-align: middle
+		white-space: normal
+		font-size: $default-font-size
+	+max-screen($breakpoint-md)
+		padding: 20px 65px 80px
+	+max-screen($breakpoint-sm)
+		padding: 10px 55px 15px
+	+max-screen($breakpoint-xs)
+		padding: 20px
+		& .header__container:last-child
+			justify-content: center
+			margin-bottom: 20px
+
+.popup
+	display: none
+	position: relative
+	height: 100%
+	margin: 0 auto
+	box-sizing: border-box
+	&__container
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+	&__text
+		min-height: 65vh
+
+.popup-closer
+	position: absolute
+	top: 0
+	right: 0
+	width: 16px
+	height: 16px
+	cursor: pointer
+	& svg
+		width: 100%
+		height: 100%
+		fill: #FFF
+	&:hover
+		& svg
+			stroke-width: 2px
+			stroke: rgba(#FFF, 0.5)
+	&:active,
+	&:focus
+		& svg
+			fill: $accent
+			stroke-width: 0
+
+._desktop
+	.popup-opener
+		&:hover
+			opacity: .75

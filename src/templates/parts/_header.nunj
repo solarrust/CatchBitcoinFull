@@ -1,0 +1,111 @@
+<header class="header">
+	<div class="header__container container">
+		<img src="./media/img/logo@2x.png" alt="Logo Catch Bitcoin" class="logo header__logo">
+		<nav class="header__menu menu">
+			<button class="btn _get" data-popup-opener="contact-form">Get access</button>
+		</nav>
+	</div>
+	<div class="header__container container">
+		<div class="header__content">
+			<h1 class="title header__title">
+				Buy and&nbsp;Sell
+				<span class="_accent">Bitcoins</span>
+			</h1>
+			<p class="description header__description">Best Price. No Limits. Zero Risks.</p>
+		</div>
+	</div>
+	<div class="header__container container">
+		<div class="header-slider header__slider slider" data-slider="header" data-slick>
+			<div class="slider-top">
+				<div class="slider-arrows">
+					<div class="slider-arrow _prev" data-slider-prev>
+						<svg><use xlink:href="#icon-arrow"></use></svg>
+					</div>
+					<div class="slider-counter" data-slider-current></div>
+					<div class="slider-arrow _next" data-slider-next>
+						<svg><use xlink:href="#icon-arrow-next"></use></svg>
+					</div>
+				</div>
+				<div class="slider-titles" data-slider-controls>
+					<div class="slider-title">New Market Participants</div>
+					<div class="slider-title">Current Market Participants</div>
+					<div class="slider-title">Crypto Investors</div>
+					<div class="slider-title">Businesses</div>
+					<div class="slider-title">Agents</div>
+				</div>
+			</div>
+			<div class="slider-container" data-slider-slides>
+				<div class="slide">
+					<div class="slide__content">
+						<h3 class="slide__name">New Market Participants</h3>
+						<h2 class="slide__title">
+							Never before has it&nbsp;been so&nbsp;simple!<br>
+							Buy Bitcoin with just a&nbsp;few clicks.
+						</h2>
+						<div class="slide__text">
+							<p>
+								The days of&nbsp;arduously collecting piles of&nbsp;documents for exchanges are over.
+							</p>
+							<p>
+								Register now to&nbsp;be&nbsp;able to&nbsp;buy the fastest-growing asset within 30&nbsp;minutes.
+							</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__content">
+						<h3 class="slide__name">Current Market Participants</h3>
+						<h2 class="slide__title">
+							Made by&nbsp;crypto investors<br>
+							Designed for crypto investors
+						</h2>
+						<div class="slide__text">
+							<p>
+								Low entry threshold, best price on&nbsp;the market, no&nbsp;commissions and the ability to&nbsp;set up&nbsp;extra security features is&nbsp;what crypto investors love&nbsp;us for.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__content">
+						<h3 class="slide__name">Crypto Investors</h3>
+						<h2 class="slide__title">Bitfinex&nbsp;+0%&nbsp;&mdash; the best possible rate ever!</h2>
+						<div class="slide__text">
+							<p>We&nbsp;have exclusive arrangements with the biggest crypto sellers. This means you buy bitcoins at&nbsp;the best rate from among all р2р exchanges.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__content">
+						<h3 class="slide__name">Businesses</h3>
+						<h2 class="slide__title">We&nbsp;love to&nbsp;work with businesses.
+							Because they know what they want.</h2>
+						<div class="slide__text">
+							<p>We&nbsp;can handle your payrolls in&nbsp;BTC, and will help you accept fiat and convert it&nbsp;to&nbsp;BTC for your business purposes. Whatever your needs are, we&nbsp;are 99.5% certain we&nbsp;have a&nbsp;solution ready.</p>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__content">
+						<h3 class="slide__name">Agents</h3>
+						<h2 class="slide__title">Special, mutually beneficial arrangements for long-term partnerships</h2>
+						<div class="slide__text">
+							<p>Become an official agent (partner) and get the best business terms for your clients. Usually, the processing time of documents takes only a few hours.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__container container">
+		<div class="contact-us">
+			<div class="contact-us__group">
+				<svg><use xlink:href="#icon-envelope"></use></svg>Feel free to contact us: <br>
+				<a href="mailto:info@catchbitcoin.io" class="contact-us__link link">
+					info@catchbitcoin.io
+				</a>
+			</div>
+		</div>
+	</div>
+</header>

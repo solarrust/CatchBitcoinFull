@@ -1,0 +1,75 @@
+<div class="popups-wrapper">
+	<div class="popups-wrapper__content">
+		<div class="popup" data-popup="contact-form" data-popup-effect="scale-in">
+				<div class="popup__container">
+					<div class="header__container container">
+						<img src="./media/img/logo@2x.png" alt="Logo Catch Bitcoin" class="logo header__logo">
+						<nav class="header__menu menu">
+							<span class="popup-closer" data-popup-closer>
+								<svg><use xlink:href="#icon-cross"></use></svg>
+							</span>
+						</nav>
+					</div>
+					<div class="popup__form">
+						<form action="http://epic.spb.ru/catch/form-sender.php" method="POST" class="contact-form" data-form-validation id="contact-form">
+							<div class="contact-form__title title-sm" data-form-group data-form-main>
+								Please fill out the contact form and our manager will contact you.
+							</div>
+							<div class="contact-form__content" data-form-group data-form-main>
+								<label class="contact-form__label label" data-form-group data-form-main>
+									<span class="label__text">Name</span>
+									<input type="text" class="contact-form__input" placeholder="Your name" name="name" data-required data-name data-input>
+									<div class="contact-form__error">It is a required field</div>
+								</label>
+								<label class="contact-form__label label" data-form-group data-form-main>
+									<span class="label__text">E-mail</span>
+									<input type="email" class="contact-form__input" placeholder="Your e-mail" name="email" data-email data-required data-input>
+									<div class="contact-form__error">Please enter a real email</div>
+								</label>
+								<label class="contact-form__label label" data-form-group data-form-main hidden>
+									<input type="text" class="country-code-field contact-form__input" name="code" data-code style="display: none" aria-hidden="true" hidden data-input>
+								</label>
+								<label class="contact-form__label label" data-form-group data-form-main>
+									<span class="label__text">Phone</span>
+									<input type="tel" id="phone" class="contact-form__input" placeholder="" name="phone" data-phone data-input>
+								</label>
+								<label class="contact-form__label label" data-form-group data-form-main>
+									<input type="checkbox" data-input data-check>
+									<span class="label__text">I'm not a robot</span>
+									<div class="contact-form__error">It is a required field</div>
+								</label>
+								<button
+										class="contact-form__btn btn"
+										data-form-submit
+										disabled
+										data-form-group
+										data-form-main>
+									Get access
+								</button>
+								<div class="g-recaptcha"
+										 data-sitekey="6Ldh3ZAUAAAAAKsPSDMl1WrNSVqQmI-6tROmvZDY"
+										 data-callback="onSubmit"
+										 data-size="invisible">
+								</div>
+							</div>
+							<div class="contact-form__thanks thanks	" data-form-complete>
+								<div class="title-sm">
+									Thank you for your message! Our manager will contact you as soon as possible!
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="header__container container">
+						<div class="contact-us">
+							<div class="contact-us__group">
+								<svg><use xlink:href="#icon-envelope"></use></svg>Feel free to contact us: <br>
+								<a href="mailto:help@catchbitcoin.com" class="contact-us__link link">
+									help@catchbitcoin.com
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>

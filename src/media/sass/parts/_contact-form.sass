@@ -1,0 +1,115 @@
+.contact-form
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	&__content
+		display: flex
+		flex-direction: column
+		width: 55%
+	&__error
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		font-size: 14px
+		color: #FF3800
+		transition: none
+	&__label
+		&:not(:first-of-type)
+			margin-top: 20px
+	&__title
+		width: 40%
+		padding-top: 20px
+		font-size: 24px
+		text-align: right
+	&__input
+		@extend .animated
+		width: 100%
+		padding: 20px
+		border: 2px solid transparent
+		border-radius: 5px
+		font-size: 14px
+		text-align: right
+		letter-spacing: -0.8px
+		transition: padding 0.3s
+		&::placeholder
+			color: rgba(#000, 0.2)
+		&:active,
+		&:hover,
+		&:focus
+			outline: 0
+			outline-offset: 0
+		&:active,
+		&:focus
+			outline: none
+	&__btn
+		@extend .animated
+		align-self: flex-end
+		margin-top: 30px
+		max-width: 130px
+		&:disabled
+			@extend .no-pe
+			background-image: linear-gradient(to bottom left, #A1A1A1 0%, #B5B5B5 89%)
+			color: rgba(#FFF, 0.3)
+	+max-screen($breakpoint-md)
+		margin: auto
+		&__label
+			&:not(:first-of-type)
+				margin-top: 10px
+		&__title
+			width: 40%
+			font-size: 18px
+		&__content
+			width: 55%
+		&__input
+			padding: 5px
+		&__btn
+			margin-top: 20px
+	+max-screen($breakpoint-xs)
+		flex-direction: column
+		justify-content: flex-start
+		&__title
+			width: 80%
+			margin: 70px auto 20px
+			padding-top: 0
+			font-size: 11px
+			text-align: center
+		&__content
+			width: 100%
+		&__btn
+			margin: 30px auto
+
+.label
+	position: relative
+	text-align: right
+	&._error
+		& .contact-form__error
+			opacity: 1
+			transition: opacity 0.3s
+		& .contact-form__input
+			color: rgba(#ea5d59, 0.3)
+			border: 2px solid #FF3800
+	&__text
+		display: inline-block
+		padding-right: 15px
+		margin-bottom: 5px
+	+max-screen($breakpoint-sm)
+		&._valid
+			& .contact-form__input
+				border-color: transparent
+
+.thanks
+	display: none
+	width: 100%
+	padding-left: 35%
+	margin-left: auto
+	font-size: 43px
+	text-align: right
+	+max-screen($breakpoint-md)
+		+box
+		justify-content: center
+		font-size: 33px
+	+max-screen($breakpoint-sm)
+		padding-left: 10%
+		margin-top: 40px

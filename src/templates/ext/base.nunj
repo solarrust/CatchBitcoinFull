@@ -1,0 +1,34 @@
+{% from "../parts/_head-scripts.nunj" import headScripts %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{% block title %}| Catch Bitcoin{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./media/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./media/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./media/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./media/img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./media/img/favicon/safari-pinned-tab.svg" color="#fff">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="./media/img/favicon/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="icon" href="./media/img/favicon/favicon.ico">
+
+		{{ headScripts() }}
+
+		{% block stylesheets %}
+			<link rel="stylesheet" href="media/css/screen.css?hash" />
+		{% endblock stylesheets %}
+	</head>
+	<body>
+
+			{% block content %}
+			{% endblock content %}
+
+		{% block scripts %}
+			<script src="media/js/bundle.js?hash"></script>
+		{% endblock scripts %}
+	</body>
+</html>
