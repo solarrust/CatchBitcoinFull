@@ -214,3 +214,17 @@
 =phone
 	@at-root html._phone #{&}
 		@content
+
+
+=gradient($top, $height)
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: $top
+		left: 0
+		display: block
+		width: 100%
+		height: $height
+		background-image: linear-gradient(to top, #ffffff, #dee4e7)
+		z-index: -1

@@ -1,0 +1,48 @@
+<div class="section big-slider">
+	<div class="slider__content big-slider__content">
+		<div class="big-slider__note">
+			Professional Solutions <br>from <span class="_accent">Catch Bitcoin</span>
+		</div>
+		<div class="solutions-slider" data-slider="solutionsSlider">
+			<div class="solutions-slider__arrows">
+				<div class="solutions-slider__arrow slider-arrow _prev" data-slider-prev>
+					<svg><use xlink:href="#icon-arrow"></use></svg>
+				</div>
+				<div class="solutions-slider__arrow slider-arrow _next" data-slider-next>
+					<svg><use xlink:href="#icon-arrow-next"></use></svg>
+				</div>
+			</div>
+			<div class="solutions-slider__slides" data-slider-slides>
+				<div class="solutions-slide">
+					<div class="solutions-slide__container">
+						<h2 class="title solutions-slide__title">Solution for  <span class="_accent">cryptocurrency exchanges</span></h2>
+						<div class="solutions-slide__content">
+							<p class="solutions-slide__text text">The Catch Bitcoin team has developed a method that allows business representatives of the crypto industry to accept Bank Wire from their own customers and immediately convert the payment to BTC. The greatest demand for this service is used by cryptocurrency exchanges, as well as companies that have difficulties with opening bank accounts. Here both manual methods of client processing and full automatic in the form of a form with a choice of the number of coins and invoice generator connected via API can be used. The Catch Bitcoin team takes on tasks of any complexity and is ready to build an individual solution for your business.</p>
+						</div>
+					</div>
+				</div>
+				<div class="solutions-slide">
+					<div class="solutions-slide__container">
+						<h2 class="title solutions-slide__title">Salary Project   <span class="_accent">at BTC</span></h2>
+						<div class="solutions-slide__content">
+							<p class="solutions-slide__text text">The Catch Bitcoin team has developed a method that allows business representatives of the crypto industry to accept Bank Wire from their own customers and immediately convert the payment to BTC. The greatest demand for this service is used by cryptocurrency exchanges, as well as companies that have difficulties with opening bank accounts. Here both manual methods of client processing and full automatic in the form of a form with a choice of the number of coins and invoice generator connected via API can be used. The Catch Bitcoin team takes on tasks of any complexity and is ready to build an individual solution for your business.</p>
+						</div>
+					</div>
+				</div>
+				<div class="solutions-slide">
+					<div class="solutions-slide__container">
+						<h2 class="title solutions-slide__title">Crypto <span class="_accent">OTC</span></h2>
+						<div class="solutions-slide__content">
+							<p class="solutions-slide__text text">The Catch Bitcoin team has developed a method that allows business representatives of the crypto industry to accept Bank Wire from their own customers and immediately convert the payment to BTC. The greatest demand for this service is used by cryptocurrency exchanges, as well as companies that have difficulties with opening bank accounts. Here both manual methods of client processing and full automatic in the form of a form with a choice of the number of coins and invoice generator connected via API can be used. The Catch Bitcoin team takes on tasks of any complexity and is ready to build an individual solution for your business.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slider-titles solutions-slider__titles" data-slider-controls>
+				<div class="slider-title">Cryptocurrency Exchange</div>
+				<div class="slider-title">Salary Project at BTC</div>
+				<div class="slider-title">Crypto OTC</div>
+			</div>
+		</div>
+	</div>
+</div>

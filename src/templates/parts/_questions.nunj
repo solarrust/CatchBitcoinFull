@@ -1,0 +1,20 @@
+<section class="section questions">
+	<div class="section__content">
+		<h2 class="questions__title title-md">
+			Frequently asked
+			<span class="_accent">questions</span>
+		</h2>
+		<div class="questions-list">
+			{% for question in questions %}
+				<div class="question">
+					<h4 class="question__title title-sm">{{ question.title }}</h4>
+					<div class="question__content">
+						<p class="question__text text">
+							{{ question.text }}
+						</p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

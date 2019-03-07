@@ -1,0 +1,67 @@
+<section class="section partners">
+	<div class="section__content">
+		<h2 class="partners__title">Our Partners</h2>
+		<div class="partners-list">
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+			<div class="partner partners__item">
+				<div class="partner__img-block">
+					<img src="../media/img/partners/IBM_logo.svg" alt="" class="partner__img">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

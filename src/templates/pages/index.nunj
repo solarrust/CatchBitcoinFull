@@ -5,4 +5,13 @@
 {% block content %}
 	{% include '../parts/_header.nunj' %}
 	{% include '../parts/_popup.nunj' %}
+	{% include '../parts/_convertor.nunj' %}
+	{% include '../parts/_sellers-table.nunj' %}
+	{% include '../parts/_want.nunj' %}
+	{% include '../parts/_key.nunj' %}
+	{% include '../parts/_big-slider.nunj' %}
+	{% include '../parts/_partners.nunj' %}
+	{% include '../parts/_opinions.nunj' %}
+	{% include '../parts/_questions.nunj' %}
+	{% include '../parts/_footer.nunj' %}
 {% endblock content %}

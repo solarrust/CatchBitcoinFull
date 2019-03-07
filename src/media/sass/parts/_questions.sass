@@ -1,0 +1,22 @@
+.questions
+	+gradient(-290px, 1550px)
+
+.questions-list
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-top: 55px
+	border-top: 1px solid rgba($gray, 0.1)
+
+.question
+	width: 48%
+	padding: 50px 0
+	border-bottom: 1px solid rgba($gray, 0.1)
+	&:last-child,
+	&:nth-last-child(2)
+		border-bottom: none
+	&__title
+		margin-bottom: 20px
+	&__text
+		max-width: 90%
+		color: $light-gray

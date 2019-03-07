@@ -26,5 +26,39 @@
 			"title": "Item 2",
 			"text": "Desc 2"
 		}
+	],
+	"questions": [
+		{
+			"title": "How do&nbsp;I buy digital currency?",
+			"text": "Using a&nbsp;Web Browser Go&nbsp;to&nbsp;the Buys page. Select the type of&nbsp;digital currency you&rsquo;d like to&nbsp;buy. Enter the amount you&rsquo;d like to&nbsp;buy denominated in&nbsp;either digital currency or&nbsp;your local currency. Select the wallet you wish to&nbsp;have your funds deposited into."
+		},
+		{
+			"title": "How do I sell or \"cash out\" my digital currency?",
+			"text": "Coinbase only allows you to sell directly into your Coinbase fiat wallet. However, there is no limit on the amount you can sell to your wallet. After selling to your Coinbase fiat wallet, you can opt to either withdraw funds to your US bank account or repurchase digital assets on the platform."
+		},
+		{
+			"title": "Limits and Account Levels",
+			"text": "Using Account Levels, you will be able buy up to $25,000 a day with your bank, have immediate access to trading your digital currency purchases, and sell the full balance of digital currency in your account. What do the different account levels enable me to do? "
+		},
+		{
+			"title": "Coinbase Pricing & Fees Disclosures",
+			"text": "Wallet Service Wallet Service Coinbase offers our USD Wallet and Hosted Digital Currency Wallet Service free of charge. This means we will store your USD and Digital Currency at no cost to you. “Digital Currency” means any digital currency currently supported."
+		},
+		{
+			"title": "Limits and Account Levels",
+			"text": "Using Account Levels, you will be able buy up to $25,000 a day with your bank, have immediate access to trading your digital currency purchases, and sell the full balance of digital currency in your account. What do the different account levels enable me to do? "
+		},
+		{
+			"title": "Coinbase Pricing & Fees Disclosures",
+			"text": "Wallet Service Wallet Service Coinbase offers our USD Wallet and Hosted Digital Currency Wallet Service free of charge. This means we will store your USD and Digital Currency at no cost to you. “Digital Currency” means any digital currency currently supported."
+		},
+		{
+			"title": "Limits and Account Levels",
+			"text": "Using Account Levels, you will be able buy up to $25,000 a day with your bank, have immediate access to trading your digital currency purchases, and sell the full balance of digital currency in your account. What do the different account levels enable me to do? "
+		},
+		{
+			"title": "Coinbase Pricing & Fees Disclosures",
+			"text": "Wallet Service Wallet Service Coinbase offers our USD Wallet and Hosted Digital Currency Wallet Service free of charge. This means we will store your USD and Digital Currency at no cost to you. “Digital Currency” means any digital currency currently supported."
+		}
 	]
 }

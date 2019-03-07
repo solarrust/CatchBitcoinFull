@@ -20,6 +20,45 @@ const OPTIONS_BY_TYPE = {
 		slidesToShow: 1,
 		dots: true,
 		arrows: true,
+		zIndex: 0,
+		responsive: [
+			{
+				breakpoint: 900,
+				settings: {
+					dots: false,
+					arrows: false,
+				},
+			},
+		],
+	},
+	solutionsSlider: {
+		fade: true,
+		infinite: false,
+		draggable: true,
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: true,
+		zIndex: 0,
+		responsive: [
+			{
+				breakpoint: 900,
+				settings: {
+					dots: false,
+					arrows: false,
+				},
+			},
+		],
+	},
+	opinions: {
+		autoplay: true,
+		autoplaySpeed: 10000,
+		fade: true,
+		infinite: false,
+		draggable: true,
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		dots: true,
+		zIndex: 0,
 		responsive: [
 			{
 				breakpoint: 900,

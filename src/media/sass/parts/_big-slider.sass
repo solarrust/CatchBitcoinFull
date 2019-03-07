@@ -1,0 +1,63 @@
+.big-slider
+	overflow: hidden
+	margin-top: 40px
+	color: #fff
+	background: url("../img/slider-bkg.jpg") no-repeat center / cover
+	+retina
+		background-image: url("../img/slider-bkg@2x.jpg")
+	&__content
+		padding: 40px 80px 90px
+	&__note
+		margin-bottom: 30px
+		font-size: 14px
+		line-height: 1.4
+		text-align: right
+		text-transform: uppercase
+
+.solutions-slider
+	position: relative
+	&__arrows
+		position: absolute
+		right: 0
+		top: 170px
+		display: flex
+		flex-direction: column
+		z-index: 1000
+	&__arrow
+		&._prev,
+		&._next
+			margin: 0
+		&._next
+			margin-top: 20px
+	&__titles
+		position: absolute
+		bottom: 25px
+		right: 0
+		z-index: 1000
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		& .slider-title
+			&:not(:first-child)
+				margin-top: 30px
+
+.solutions-slide
+	height: 100%
+	&__container
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+	&__title
+		display: flex
+		flex-direction: column
+		justify-content: center
+		flex-grow: 1
+		margin-top: auto
+		margin-bottom: auto
+	&__content
+		margin-top: 55px
+		padding-top: 40px
+		border-top: 1px solid rgba(#fff, 0.2)
+	&__text
+		max-width: 75%

@@ -1,0 +1,28 @@
+<div class="section want">
+	<div class="section__content want__content">
+		<div class="want-container">
+			<div class="want-block" data-popup-opener="contact-form">
+				<i class="want-icon _bitcoin"></i>
+				<h2 class="want-block__title title-md">
+					Want to Sell
+					<span class="_accent">Bitcoins?</span>
+				</h2>
+				<p class="text want-block__text">
+					Accept applications from sellers with a&nbsp;volume of&nbsp;1000&nbsp;BTC.
+				</p>
+				<button class="btn _link-btn want-block__btn" data-popup-opener="contact-form">Contact Us</button>
+			</div>
+			<div class="want-block" data-popup-opener="contact-form">
+				<i class="want-icon _persons"></i>
+				<h2 class="want-block__title title-md">
+					Want to Become<br>
+					<span class="_accent">an Agent?</span>
+				</h2>
+				<p class="text want-block__text">
+					Get the official status of&nbsp;an&nbsp;agent in&nbsp;the projectname and earn with&nbsp;us.
+				</p>
+				<button class="btn _link-btn want-block__btn" data-popup-opener="contact-form">Contact Us</button>
+			</div>
+		</div>
+	</div>
+</div>

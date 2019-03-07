@@ -1,0 +1,50 @@
+.convertor
+	padding: 60px 80px 20px
+	&__content
+		padding: 50px 80px 40px
+		color: #FFF
+		text-align: center
+		background-color: $gray
+	&__title
+		margin-bottom: 10px
+
+.convert-form
+	display: flex
+	flex-wrap: nowrap
+	justify-content: space-between
+	align-items: center
+	margin-top: 35px
+	&__text
+		font-size: 24px
+		text-align: left
+		&._multi
+			+Ubuntu(300)
+			font-size: 26px
+			color: #fff
+		&._equality
+			+Ubuntu(300)
+			font-size: 30px
+			color: #fff
+	&__input
+		width: 185px
+		padding: 20px
+		color: $gray
+		font-size: 16px
+		border-radius: 5px
+		border: none
+		&::placeholder
+			color: rgba($light-gray, 0.4)
+		&:focus,
+		&:active
+			outline: none
+	&__btn
+		padding: 21px 25px
+		margin-left: 20px
+	&__note
+		display: block
+		font-size: 16px
+		color: rgba(#f0f0f0, 0.6)
+	&__group
+		display: flex
+		align-items: flex-start
+

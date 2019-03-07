@@ -1,0 +1,122 @@
+<section class="section opinions">
+	<div class="section__content opinions__content">
+		<div class="opinions-slider" data-slider="opinions">
+			<div class="opinions-slider__list" data-slider-slides="">
+				<div class="opinion">
+					<div class="opinion__container">
+						<div class="opinion__img-block">
+							<img src="./media/img/opinions/man.png" srcset="./media/img/opinions/man@2x.png 2x" alt="" class="opinion__img">
+						</div>
+						<div class="opinion__play">
+							<button class="opinion__play-btn">
+								play
+								<svg><use xlink:href="#icon-triangle"></use></svg>
+							</button>
+						</div>
+						<div class="opinion__content">
+							<div class="opinion__text">
+								<p>&laquo;Until now whenever we&rsquo;ve needed to&nbsp;transfer money we&rsquo;ve had to&nbsp;rely on&nbsp;a&nbsp;third party, whether it&nbsp;be&nbsp;a&nbsp;bank, a&nbsp;clearing house or&nbsp;a&nbsp;payment network. Bitcoin offers, for the first time, a&nbsp;method for transferring value and making payments from anywhere to&nbsp;anywhere, in&nbsp;real-time, without any intermediary.&raquo;</p>
+							</div>
+							<p class="opinion__name">LAWRENCE H. SUMMERS</p>
+						</div>
+					</div>
+				</div>
+				<div class="opinion">
+					<div class="opinion__container">
+						<div class="opinion__img-block">
+							<img src="./media/img/opinions/man.png" srcset="./media/img/opinions/man@2x.png 2x" alt="" class="opinion__img">
+						</div>
+						<div class="opinion__play">
+							<button class="opinion__play-btn">
+								play
+								<svg><use xlink:href="#icon-triangle"></use></svg>
+							</button>
+						</div>
+						<div class="opinion__content">
+							<div class="opinion__text">
+								<p>&laquo;Until now whenever we&rsquo;ve needed to&nbsp;transfer money we&rsquo;ve had to&nbsp;rely on&nbsp;a&nbsp;third party, whether it&nbsp;be&nbsp;a&nbsp;bank, a&nbsp;clearing house or&nbsp;a&nbsp;payment network. Bitcoin offers, for the first time, a&nbsp;method for transferring value and making payments from anywhere to&nbsp;anywhere, in&nbsp;real-time, without any intermediary.&raquo;</p>
+							</div>
+							<p class="opinion__name">LAWRENCE H. SUMMERS</p>
+						</div>
+					</div>
+				</div>
+				<div class="opinion">
+					<div class="opinion__container">
+						<div class="opinion__img-block">
+							<img src="./media/img/opinions/man.png" srcset="./media/img/opinions/man@2x.png 2x" alt="" class="opinion__img">
+						</div>
+						<div class="opinion__play">
+							<button class="opinion__play-btn">
+								play
+								<svg><use xlink:href="#icon-triangle"></use></svg>
+							</button>
+						</div>
+						<div class="opinion__content">
+							<div class="opinion__text">
+								<p>&laquo;Until now whenever we&rsquo;ve needed to&nbsp;transfer money we&rsquo;ve had to&nbsp;rely on&nbsp;a&nbsp;third party, whether it&nbsp;be&nbsp;a&nbsp;bank, a&nbsp;clearing house or&nbsp;a&nbsp;payment network. Bitcoin offers, for the first time, a&nbsp;method for transferring value and making payments from anywhere to&nbsp;anywhere, in&nbsp;real-time, without any intermediary.&raquo;</p>
+							</div>
+							<p class="opinion__name">LAWRENCE H. SUMMERS</p>
+						</div>
+					</div>
+				</div>
+				<div class="opinion">
+					<div class="opinion__container">
+						<div class="opinion__img-block">
+							<img src="./media/img/opinions/man.png" srcset="./media/img/opinions/man@2x.png 2x" alt="" class="opinion__img">
+						</div>
+						<div class="opinion__play">
+							<button class="opinion__play-btn">
+								play
+								<svg><use xlink:href="#icon-triangle"></use></svg>
+							</button>
+						</div>
+						<div class="opinion__content">
+							<div class="opinion__text">
+								<p>&laquo;Until now whenever we&rsquo;ve needed to&nbsp;transfer money we&rsquo;ve had to&nbsp;rely on&nbsp;a&nbsp;third party, whether it&nbsp;be&nbsp;a&nbsp;bank, a&nbsp;clearing house or&nbsp;a&nbsp;payment network. Bitcoin offers, for the first time, a&nbsp;method for transferring value and making payments from anywhere to&nbsp;anywhere, in&nbsp;real-time, without any intermediary.&raquo;</p>
+							</div>
+							<p class="opinion__name">LAWRENCE H. SUMMERS</p>
+						</div>
+					</div>
+				</div>
+				<div class="opinion">
+					<div class="opinion__container">
+						<div class="opinion__img-block">
+							<img src="./media/img/opinions/man.png" srcset="./media/img/opinions/man@2x.png 2x" alt="" class="opinion__img">
+						</div>
+						<div class="opinion__play">
+							<button class="opinion__play-btn">
+								play
+								<svg><use xlink:href="#icon-triangle"></use></svg>
+							</button>
+						</div>
+						<div class="opinion__content">
+							<div class="opinion__text">
+								<p>&laquo;Until now whenever we&rsquo;ve needed to&nbsp;transfer money we&rsquo;ve had to&nbsp;rely on&nbsp;a&nbsp;third party, whether it&nbsp;be&nbsp;a&nbsp;bank, a&nbsp;clearing house or&nbsp;a&nbsp;payment network. Bitcoin offers, for the first time, a&nbsp;method for transferring value and making payments from anywhere to&nbsp;anywhere, in&nbsp;real-time, without any intermediary.&raquo;</p>
+							</div>
+							<p class="opinion__name">LAWRENCE H. SUMMERS</p>
+						</div>
+					</div>
+				</div>
+				<div class="opinion">
+					<div class="opinion__container">
+						<div class="opinion__img-block">
+							<img src="./media/img/opinions/man.png" srcset="./media/img/opinions/man@2x.png 2x" alt="" class="opinion__img">
+						</div>
+						<div class="opinion__play">
+							<button class="opinion__play-btn">
+								play
+								<svg><use xlink:href="#icon-triangle"></use></svg>
+							</button>
+						</div>
+						<div class="opinion__content">
+							<div class="opinion__text">
+								<p>&laquo;Until now whenever we&rsquo;ve needed to&nbsp;transfer money we&rsquo;ve had to&nbsp;rely on&nbsp;a&nbsp;third party, whether it&nbsp;be&nbsp;a&nbsp;bank, a&nbsp;clearing house or&nbsp;a&nbsp;payment network. Bitcoin offers, for the first time, a&nbsp;method for transferring value and making payments from anywhere to&nbsp;anywhere, in&nbsp;real-time, without any intermediary.&raquo;</p>
+							</div>
+							<p class="opinion__name">LAWRENCE H. SUMMERS</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
