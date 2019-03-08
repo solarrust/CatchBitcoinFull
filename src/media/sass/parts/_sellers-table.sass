@@ -79,10 +79,18 @@
 			text-align: right
 	& .table__row
 		+box
+		@extend .animated
 		&:nth-child(odd)
 			background-color: $almost-white
-		&:first-child
+		&:hover
 			background-color: rgba($accent, 0.2)
+			& .btn
+				color: #fff
+				&:after
+					opacity: 1
+				&:hover
+					&:after
+						opacity: 0
 	& td
 		+box
 		+Ubuntu(400)

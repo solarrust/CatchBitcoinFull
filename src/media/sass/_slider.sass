@@ -88,18 +88,16 @@
 	cursor: pointer
 	+unselectable
 	& svg
+		@extend .animated
 		width: 100%
 		height: 100%
 		fill: #ffffff
 	&:hover
 		& svg
-			stroke-width: 2px
-			stroke: rgba(#FFF, 0.5)
+			fill: $accent
 	&:active,
 	&:focus
-		& svg
-			fill: $accent
-			stroke-width: 0
+		outline: none
 	&._prev
 		margin-right: 12px
 	&._next
@@ -131,37 +129,44 @@
 
 .slick-dots
 	display: flex
+	align-items: center
 	margin-top: 15px
 	& li
 		position: relative
 		flex: 0 0 auto
-		width: 5px
-		height: 5px
+		width: 12px
+		height: 12px
 		border-radius: 50%
-		transition: box-shadow $default-transition-duration $default-transition-function, transform $default-transition-duration $default-transition-function
 		cursor: pointer
 		&:not(:last-child)
 			margin-right: 25px
 		&.slick-active
+			@extend .no-pe
 			& button
+				@extend .no-pe
 				background: $accent
-				transition: none
-				transform: scale(2.5)
-			&:hover
-				box-shadow: none
+				transform: scale(1.5)
 		&:hover
-			box-shadow: 0 0 0 4px #D8D9DA
+			& button
+				background: #fff
+				transform: none
 	& button
+		@extend .animated
 		position: absolute
 		left: 0
 		top: 0
-		width: 5px
-		height: 5px
+		width: 8px
+		height: 8px
 		border: none
 		border-radius: 50%
 		background-color: #ADBBC2
 		text-indent: -9999999px
 		cursor: pointer
+		transform: scale(0.7)
+		transform-origin: center
+		transition: all 0.2s
+
+
 
 [data-slider-slides]
 	opacity: 0

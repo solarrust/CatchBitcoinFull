@@ -22,6 +22,8 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 		SlickSliders: require('./modules/SlickSliders'),
 		Popups: require('./modules/Popups'),
 		Validations: require('./modules/Validations'),
+		LangSelect: require('./modules/LangSelect'),
+		Switchers: require('./modules/Switchers'),
 	};
 
 	// Startup

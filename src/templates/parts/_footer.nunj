@@ -22,27 +22,27 @@
 				<ul class="talk__list t-list">
 					<li class="t-list__item">
 						<a href="#" class="t-list__link _flag">
-							<svg><use xlink:href="#icon-japan"></use></svg>
+							<svg><use xlink:href="#icon-ja"></use></svg>
 						</a>
 					</li>
 					<li class="t-list__item">
 						<a href="#" class="t-list__link _flag">
-							<svg><use xlink:href="#icon-united-states"></use></svg>
+							<svg><use xlink:href="#icon-en"></use></svg>
 						</a>
 					</li>
 					<li class="t-list__item">
 						<a href="#" class="t-list__link _flag">
-							<svg><use xlink:href="#icon-south-korea"></use></svg>
+							<svg><use xlink:href="#icon-ko"></use></svg>
 						</a>
 					</li>
 					<li class="t-list__item">
 						<a href="#" class="t-list__link _flag">
-							<svg><use xlink:href="#icon-china"></use></svg>
+							<svg><use xlink:href="#icon-ch"></use></svg>
 						</a>
 					</li>
 					<li class="t-list__item">
 						<a href="#" class="t-list__link _flag">
-							<svg><use xlink:href="#icon-russia"></use></svg>
+							<svg><use xlink:href="#icon-ru"></use></svg>
 						</a>
 					</li>
 				</ul>
@@ -52,32 +52,32 @@
 			<h3 class="title-sm">E-mail</h3>
 			<ul class="email__list emails-list">
 				<li class="emails-list__item">
-					<a href="mailto:help@CatchBitcoin.com" class="emails-list__link _flag">
-						<svg><use xlink:href="#icon-united-states"></use></svg>
+					<a href="mailto:help@CatchBitcoin.com" class="emails-list__link _flag footer-link">
+						<svg><use xlink:href="#icon-en"></use></svg>
 						help@CatchBitcoin.com
 					</a>
 				</li>
 				<li class="emails-list__item">
-					<a href="mailto:help_CH@CatchBitcoin.com" class="emails-list__link _flag">
-						<svg><use xlink:href="#icon-china"></use></svg>
+					<a href="mailto:help_CH@CatchBitcoin.com" class="emails-list__link _flag footer-link">
+						<svg><use xlink:href="#icon-ch"></use></svg>
 						help_CH@CatchBitcoin.com
 					</a>
 				</li>
 				<li class="emails-list__item">
-					<a href="mailto:help_KR@CatchBitcoin.com" class="emails-list__link _flag">
-						<svg><use xlink:href="#icon-south-korea"></use></svg>
+					<a href="mailto:help_KR@CatchBitcoin.com" class="emails-list__link _flag footer-link">
+						<svg><use xlink:href="#icon-ko"></use></svg>
 						help_KR@CatchBitcoin.com
 					</a>
 				</li>
 				<li class="emails-list__item">
-					<a href="mailto:help_JP@CatchBitcoin.com" class="emails-list__link _flag">
-						<svg><use xlink:href="#icon-japan"></use></svg>
+					<a href="mailto:help_JP@CatchBitcoin.com" class="emails-list__link _flag footer-link">
+						<svg><use xlink:href="#icon-ja"></use></svg>
 						help_JP@CatchBitcoin.com
 					</a>
 				</li>
 				<li class="emails-list__item">
-					<a href="mailto:help_RU@CatchBitcoin.com" class="emails-list__link _flag">
-						<svg><use xlink:href="#icon-russia"></use></svg>
+					<a href="mailto:help_RU@CatchBitcoin.com" class="emails-list__link _flag footer-link">
+						<svg><use xlink:href="#icon-ru"></use></svg>
 						help_RU@CatchBitcoin.com
 					</a>
 				</li>
@@ -90,16 +90,16 @@
 					CatchBitcoin 2019
 				</div>
 				<div class="menu-list__item">
-					<a href="#">Service Under Maintenance</a>
+					<a href="#" class="footer-link">Service Under Maintenance</a>
 				</div>
 				<div class="menu-list__item">
-					<a href="#">Submit A Request</a>
+					<a href="#" class="footer-link">Submit A Request</a>
 				</div>
 				<div class="menu-list__item">
-					<a href="#">Privacy Policy</a>
+					<a href="#" class="footer-link">Privacy Policy</a>
 				</div>
 				<div class="menu-list__item">
-					<a href="#">Terms and Conditions</a>
+					<a href="#" class="footer-link">Terms and Conditions</a>
 				</div>
 			</nav>
 		</div>

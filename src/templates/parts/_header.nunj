@@ -1,9 +1,42 @@
 <header class="header">
 	<div class="header__container container">
-		<img src="./media/img/logo@2x.png" alt="Logo Catch Bitcoin" class="logo header__logo">
-		<nav class="header__menu menu">
-			<button class="btn _get" data-popup-opener="contact-form">Get access</button>
-		</nav>
+		<div class="container-block">
+			<img src="./media/img/logo.svg" alt="Logo Catch Bitcoin" class="logo header__logo">
+			<div class="header__select lang-select">
+				<select class="select">
+					<option value="En">
+						<svg><use xlink:href="#icon-en"></use></svg>
+						En
+					</option>
+					<option value="Ja">
+						<svg><use xlink:href="#icon-ja"></use></svg>
+						Ja
+					</option>
+					<option value="Ch">
+						<svg><use xlink:href="#icon-ch"></use></svg>
+						Ch
+					</option>
+					<option value="Ru">
+						<svg><use xlink:href="#icon-ru"></use></svg>
+						Ru
+					</option>
+					<option value="Ko">
+						<svg><use xlink:href="#icon-ko"></use></svg>
+						Ko
+					</option>
+				</select>
+			</div>
+		</div>
+		<div class="container-block">
+			<p class="header__rate rate"><span class="_accent">Bitcoin (BTC)</span> = $3 971,36 </p>
+			<p class="header__rate rate"><span class="_accent">Sellers Supply</span> = 502 042 BTC </p>
+		</div>
+		<div class="container-block">
+			<a href="#" class="header__link">Sign in</a>
+			<nav class="header__menu menu">
+				<button class="btn _get" data-popup-opener="contact-form">Get Started</button>
+			</nav>
+		</div>
 	</div>
 	<div class="header__container container">
 		<div class="header__content">
@@ -99,13 +132,13 @@
 		</div>
 	</div>
 	<div class="header__container container">
-		<div class="contact-us">
-			<div class="contact-us__group">
-				<svg><use xlink:href="#icon-envelope"></use></svg>Feel free to contact us: <br>
-				<a href="mailto:info@catchbitcoin.io" class="contact-us__link link">
-					info@catchbitcoin.io
-				</a>
-			</div>
-		</div>
+		{#<div class="contact-us">#}
+			{#<div class="contact-us__group">#}
+				{#<svg><use xlink:href="#icon-envelope"></use></svg>Feel free to contact us: <br>#}
+				{#<a href="mailto:info@catchbitcoin.io" class="contact-us__link link">#}
+					{#info@catchbitcoin.io#}
+				{#</a>#}
+			{#</div>#}
+		{#</div>#}
 	</div>
 </header>
