@@ -131,7 +131,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header__container container">
+	{#<div class="header__container container">#}
 		{#<div class="contact-us">#}
 			{#<div class="contact-us__group">#}
 				{#<svg><use xlink:href="#icon-envelope"></use></svg>Feel free to contact us: <br>#}
@@ -140,5 +140,5 @@
 				{#</a>#}
 			{#</div>#}
 		{#</div>#}
-	</div>
+	{#</div>#}
 </header>

@@ -1,3 +1,5 @@
+@import "popup-close-cursor"
+
 .popups-wrapper
 	display: none
 	position: fixed
@@ -64,18 +66,15 @@
 	height: 16px
 	cursor: pointer
 	& svg
+		@extend .animated
 		width: 100%
 		height: 100%
 		fill: #FFF
-	&:hover
-		& svg
-			stroke-width: 2px
-			stroke: rgba(#FFF, 0.5)
+	&:hover,
 	&:active,
 	&:focus
 		& svg
 			fill: $accent
-			stroke-width: 0
 
 ._desktop
 	.popup-opener

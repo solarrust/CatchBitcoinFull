@@ -1,7 +1,7 @@
 <section class="section opinions">
 	<div class="section__content opinions__content">
-		<div class="opinions-slider" data-slider="opinions">
-			<div class="opinions-slider__list" data-slider-slides="">
+		<div class="opinions-slider" data-slider="opinions" data-slick>
+			<div class="opinions-slider__list" data-slider-slides>
 				<div class="opinion">
 					<div class="opinion__container">
 						<div class="opinion__img-block">

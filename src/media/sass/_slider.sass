@@ -140,16 +140,16 @@
 		cursor: pointer
 		&:not(:last-child)
 			margin-right: 25px
-		&.slick-active
-			@extend .no-pe
-			& button
-				@extend .no-pe
-				background: $accent
-				transform: scale(1.5)
 		&:hover
 			& button
 				background: #fff
 				transform: none
+		&.slick-active
+			@extend .no-pe
+			& button
+				@extend .no-pe
+				background-color: $accent
+				transform: scale(1.5)
 	& button
 		@extend .animated
 		position: absolute

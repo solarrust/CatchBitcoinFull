@@ -38,12 +38,22 @@
 			opacity: 1
 		& .want-block__title ._accent,
 		& .want-block__btn,
-		& .want-block__text
+		& .want-block__text,
+		& .want-block__icon svg
 			color: #fff
+			fill: #fff
 		& .want-block__btn
 			text-decoration: underline
 	& *
 		z-index: 1
+	&__icon
+		width: 31px
+		height: 36px
+		margin: 0 auto
+		& svg
+			width: 100%
+			height: 100%
+			fill: $accent
 	&__title
 		margin-bottom: 15px
 		color: $gray

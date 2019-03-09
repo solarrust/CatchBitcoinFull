@@ -78,24 +78,27 @@ const CUSTOM_SETTINGS_BY_TYPE = {
 };
 
 function SlickSliders() {
-	const $sliders = $('[data-slider]');
-	const totalSliders = $sliders.length;
-	for (let k = 0; k < totalSliders; k++) {
-		this._initSlider($sliders.eq(k));
-	}
-	dom.$window.on('resize orientationchange', () => {
-		setTimeout(() => {
-			this.update();
+	var self = this;
+	self.rebuild();
+	dom.$window.on('resize orientationchange', function() {
+		setTimeout(function() {
+			self.update();
 		}, 300);
 	});
 }
 
 SlickSliders.prototype = {
+	rebuild: function() {
+		var $sliders = $('[data-slider]');
+		var totalSliders = $sliders.length;
+		for (var k = 0; k < totalSliders; k++) {
+			this._initSlider($sliders.eq(k));
+		}
+	},
 	_initSlider: function($container) {
 		var type = $container.attr('data-slider');
-		this.$slides = $container.find('[data-slider-slides]');
-
-		var totalSlides = this.$slides.children().length;
+		var $slides = $container.find('[data-slider-slides]');
+		var totalSlides = $slides.children().length;
 		var $total = $container.find('[data-slider-total]');
 		var $prev = $container.find('[data-slider-prev]');
 		var $next = $container.find('[data-slider-next]');
@@ -137,7 +140,7 @@ SlickSliders.prototype = {
 
 			var customSettings = CUSTOM_SETTINGS_BY_TYPE[type] || {};
 
-			this.$slides.slick(options);
+			$slides.slick(options);
 
 			if ($dotsContainer.length) {
 				var $dotModel = $dotsContainer
@@ -157,19 +160,19 @@ SlickSliders.prototype = {
 				var $dots = $dotsContainer.children();
 				$dots.click(e => {
 					e.preventDefault();
-					this.$slides.slick('slickGoTo', $(e.currentTarget).index());
+					$slides.slick('slickGoTo', $(e.currentTarget).index());
 				});
 
 				dom.$document.keydown(e => {
 					const code = e.keyCode;
 					if (code === 39) {
-						this.$slides.slick('slickGoTo', currentSlideId + 1);
+						$slides.slick('slickGoTo', currentSlideId + 1);
 					} else if (code === 37) {
-						this.$slides.slick('slickGoTo', currentSlideId - 1);
+						$slides.slick('slickGoTo', currentSlideId - 1);
 					}
 				});
 
-				this.$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+				$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
 					currentSlideId = nextSlide;
 					$dots.removeClass('_active');
 					for (let k = 0; k < $dotsContainer.length; k++) {
@@ -211,30 +214,71 @@ SlickSliders.prototype = {
 					.first()
 					.removeClass(ACTIVE);
 
+				let $originalControls = $controlsContainer.children();
+
+				if (typeof $controlsContainer.attr('data-title-hide') !== 'undefined') {
+					$controlsContainer.closest('.slider-titles').css({
+						left:
+							-(
+								$controlsContainer
+									.children()
+									.first()
+									.width() + 150
+							) + 'px',
+					});
+
+					for (let i = 0; i < $originalControls.length; i++) {
+						$controlsContainer.append($originalControls.eq(i).clone());
+					}
+				}
+
 				var $controls = $controlsContainer.children();
+
 				$controls.click(e => {
 					e.preventDefault();
-					this.$slides.slick('slickGoTo', $(e.currentTarget).index());
+
+					let slideIndex = $(e.currentTarget).index();
+
+					if ($(e.currentTarget).index() > $originalControls.length - 1) {
+						slideIndex -= $originalControls.length;
+					}
+
+					$slides.slick('slickGoTo', slideIndex);
 				});
 
 				dom.$document.keydown(e => {
 					const code = e.keyCode;
 					if (code === 39) {
-						this.$slides.slick('slickGoTo', currentSlideId + 1);
+						$slides.slick('slickGoTo', currentSlideId + 1);
 					} else if (code === 37) {
-						this.$slides.slick('slickGoTo', currentSlideId - 1);
+						$slides.slick('slickGoTo', currentSlideId - 1);
 					}
 				});
 
-				this.$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+				$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
 					currentSlideId = nextSlide;
 					$controls.removeClass('_active');
 					for (let k = 0; k < $controlsContainer.length; k++) {
 						let $currentControlContainer = $controlsContainer.eq(k);
+						let $controlWidth = $currentControlContainer
+							.children()
+							.eq(nextSlide)
+							.width();
+						let $controlLeftPosition = $controlsContainer
+							.children()
+							.eq(nextSlide)
+							.position().left;
+
 						$currentControlContainer
 							.children()
 							.eq(nextSlide)
 							.addClass(ACTIVE);
+
+						if (typeof $controlsContainer.attr('data-title-hide') !== 'undefined') {
+							$controlsContainer
+								.closest('.slider-titles')
+								.css({ left: -($controlLeftPosition + $controlWidth + 150) + 'px' });
+						}
 					}
 				});
 
@@ -249,7 +293,7 @@ SlickSliders.prototype = {
 
 			var $current = $container.find('[data-slider-current]');
 			if ($current.length) {
-				this.$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+				$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
 					$current.text(`0${nextSlide + 1}`);
 					TweenMax.fromTo($current, 0.35, { alpha: 0 }, { alpha: 1 });
 				});
@@ -259,7 +303,7 @@ SlickSliders.prototype = {
 
 			if ($subSlides.length) {
 				var index = 0;
-				this.$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+				$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
 					if (index != nextSlide) {
 						index = nextSlide;
 						$subSlides
@@ -279,10 +323,10 @@ SlickSliders.prototype = {
 			if ($previews.length) {
 				$previews.click(e => {
 					e.preventDefault();
-					this.$slides.slick('slickGoTo', $(e.currentTarget).index());
+					$slides.slick('slickGoTo', $(e.currentTarget).index());
 				});
 
-				this.$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+				$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
 					$previews
 						.removeClass(ACTIVE)
 						.eq(nextSlide)
@@ -299,7 +343,7 @@ SlickSliders.prototype = {
 				// 	TweenMax.to($slides, 0.35, {x: direction * movePower});
 				// }
 
-				this.$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+				$slides.on('beforeChange', function(e, slick, currentSlide, nextSlide) {
 					this.moveSlider(0);
 				});
 
@@ -321,9 +365,6 @@ SlickSliders.prototype = {
 		} else {
 			$whenActives.remove();
 		}
-	},
-	moveSlider: function(direction) {
-		TweenMax.to(this.$slides, 0.35, { x: direction * this.movePower });
 	},
 	update: function() {
 		$('[data-slider-slides]').slick('setPosition');

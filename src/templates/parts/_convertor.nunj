@@ -3,7 +3,10 @@
 		<h2 class="convertor__title title-sm">Enter the amount of&nbsp;Bitcoins and get the best deal</h2>
 		<p class="text">Or&nbsp;сhoose the most suitable offer from the list</p>
 		<div class="converter__form convert-form">
-			<input type="text" class="convert-form__input" placeholder="Amount of BTC">
+			<label>
+				<input type="text" class="convert-form__input" placeholder="Amount of BTC" data-num data-btc>
+				<div class="convert-form__error _error">Numbers only</div>
+			</label>
 			<span class="convert-form__text _multi">×</span>
 			<span class="convert-form__text text">
 				$3873 (current price)
@@ -11,7 +14,7 @@
 			</span>
 			<span class="convert-form__text _equality">=</span>
 			<div class="convert-form__group">
-				<input type="text" class="convert-form__input" placeholder="Amount of BTC">
+				<input type="text" class="convert-form__input" placeholder="Total Price" value="" data-convert-result>
 				<button class="btn convert-form__btn">Purchase BTC</button>
 			</div>
 		</div>

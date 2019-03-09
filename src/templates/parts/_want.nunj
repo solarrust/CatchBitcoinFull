@@ -1,8 +1,10 @@
-<div class="section want">
+<section class="section want">
 	<div class="section__content want__content">
 		<div class="want-container">
 			<div class="want-block" data-popup-opener="contact-form">
-				<i class="want-icon _bitcoin"></i>
+				<div class="want-block__icon">
+					<svg><use xlink:href="#icon-logo-icon"></use></svg>
+				</div>
 				<h2 class="want-block__title title-md">
 					Want to Sell
 					<span class="_accent">Bitcoins?</span>
@@ -13,7 +15,9 @@
 				<button class="btn _link-btn want-block__btn" data-popup-opener="contact-form">Contact Us</button>
 			</div>
 			<div class="want-block" data-popup-opener="contact-form">
-				<i class="want-icon _persons"></i>
+				<div class="want-block__icon">
+					<svg><use xlink:href="#icon-users"></use></svg>
+				</div>
 				<h2 class="want-block__title title-md">
 					Want to Become<br>
 					<span class="_accent">an Agent?</span>
@@ -25,4 +29,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>

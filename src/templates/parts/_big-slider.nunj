@@ -1,9 +1,9 @@
-<div class="section big-slider">
+<section class="section big-slider">
 	<div class="slider__content big-slider__content">
 		<div class="big-slider__note">
 			Professional Solutions <br>from <span class="_accent">Catch Bitcoin</span>
 		</div>
-		<div class="solutions-slider" data-slider="solutionsSlider">
+		<div class="solutions-slider" data-slider="solutionsSlider" data-slick>
 			<div class="solutions-slider__arrows">
 				<div class="solutions-slider__arrow slider-arrow _prev" data-slider-prev>
 					<svg><use xlink:href="#icon-arrow"></use></svg>
@@ -45,4 +45,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
