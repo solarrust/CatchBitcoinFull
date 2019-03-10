@@ -1,5 +1,6 @@
 .convertor
 	padding: 60px 80px 20px
+	margin-bottom: 20px
 	&__content
 		padding: 50px 80px 40px
 		color: #FFF
@@ -7,6 +8,17 @@
 		background-color: $gray
 	&__title
 		margin-bottom: 10px
+	+max-screen($breakpoint-md)
+		padding: 0
+		margin-bottom: 45px
+		&__content
+			padding: 30px 30px 55px
+	+max-screen($breakpoint-sm)
+		&__content
+			padding: 40px 25px 45px
+		&__text
+			width: 65%
+			margin: 0 auto
 
 .convert-form
 	display: flex
@@ -37,10 +49,12 @@
 		&:focus,
 		&:active
 			outline: none
-	&__error
+	& label
 		position: relative
+	&__error
+		position: absolute
 		opacity: 0
-		bottom: -5px
+		bottom: -20px
 		font-size: 12px
 		color: #FF3800
 		text-align: left
@@ -54,4 +68,44 @@
 	&__group
 		display: flex
 		align-items: flex-start
+		&:first-of-type
+			flex-grow: 1
+			justify-content: space-between
+			align-items: center
+			max-width: 350px
+			margin: 0 20px
+	+max-screen($breakpoint-md)
+		&__group
+			&:first-of-type
+				max-width: 310px
+				margin: 0 15px
+		&__input
+			width: 130px
+		&__text
+			font-size: 20px
+		&__btn
+			margin-left: 10px
+	+max-screen($breakpoint-sm)
+		flex-direction: column
+		&__group
+			flex-direction: column
+			align-items: center
+			width: 100%
+			&:first-of-type
+				flex-direction: row
+				justify-content: space-between
+				max-width: 295px
+				margin: 25px 0 30px
+		&__input
+			width: calc(100% - 30px)
+		& label
+			width: 100%
+		&__error
+			bottom: auto
+			top: -20px
+			left: 15px
+		&__btn
+			width: calc(100% - 30px)
+			margin-left: 0
+			margin-top: 15px
 

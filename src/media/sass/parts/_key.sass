@@ -1,6 +1,7 @@
 .key
 	+gradient(-150px, 800px)
-	padding: 95px 80px 40px
+	padding: 0 80px
+	margin-bottom: 80px
 	&__group
 		position: relative
 	&__title
@@ -9,8 +10,26 @@
 		position: absolute
 		top: 170px
 		right: 60px
-		max-width: 490px
+		width: 44%
 		color: $gray
+	+max-screen(1200px)
+		&__description
+			position: static
+			width: 100%
+			max-width: 490px
+			margin-top: 35px
+	+max-screen($breakpoint-md)
+		+gradient(-300px, 1385px)
+		padding: 0 40px 40px
+		&__title
+			margin-left: -10px
+	+max-screen($breakpoint-sm)
+		+gradient(-475px, 1555px)
+		padding: 0 20px
+		margin-bottom: 95px
+		&__description
+			max-width: 335px
+			font-size: 14px
 
 .key-benefits
 	display: flex
@@ -24,6 +43,7 @@
 		padding: 30px
 		background-color: #f8f8f8
 		border: 1px solid rgba(173, 187, 194, 0.4)
+		border-radius: 5px
 		cursor: pointer
 		&:not(:last-child)
 			margin-bottom: 15px
@@ -55,7 +75,7 @@
 		+box
 		+Ubuntu(300)
 		position: absolute
-		top: 45px
+		top: 60px
 		right: 40px
 		flex: 0 0 auto
 		display: flex
@@ -65,3 +85,17 @@
 		height: 32px
 		padding: 0
 		border-radius: 50%
+	+max-screen($breakpoint-md)
+		margin-top: 50px
+	+max-screen($breakpoint-sm)
+		&__item
+			padding: 30px 20px
+		&__content
+			padding: 0
+		&__icon
+			margin-right: 10px
+		&__title
+			font-size: 16px
+		&__btn
+			top: 10px
+			right: 10px

@@ -7,9 +7,12 @@ for (i = 0; i < x.length; i++) {
 	a = document.createElement('div');
 	a.setAttribute('class', 'select-selected');
 	a.innerHTML =
-		`<svg><use xlink:href="#icon-${selElmnt.options[selElmnt.selectedIndex].innerHTML.toLowerCase()}"></use></svg>` +
-		selElmnt.options[selElmnt.selectedIndex].innerHTML;
+		`<svg><use xlink:href="#icon-${$.trim(
+			selElmnt.options[selElmnt.selectedIndex].innerHTML.toLowerCase()
+		)}"></use></svg>` + selElmnt.options[selElmnt.selectedIndex].innerHTML;
 	x[i].appendChild(a);
+
+	console.log($.trim(selElmnt.options[selElmnt.selectedIndex].innerHTML.toLowerCase()));
 	/* For each element, create a new div that will contain the option list: */
 	b = document.createElement('div');
 	b.setAttribute('class', 'select-items select-hide');
@@ -18,7 +21,7 @@ for (i = 0; i < x.length; i++) {
 		create a new div that will act as an option item: */
 		c = document.createElement('div');
 		c.innerHTML =
-			`<svg><use xlink:href="#icon-${selElmnt.options[j].innerHTML.toLowerCase()}"></use></svg>` +
+			`<svg><use xlink:href="#icon-${$.trim(selElmnt.options[j].innerHTML.toLowerCase())}"></use></svg>` +
 			selElmnt.options[j].innerHTML;
 		c.addEventListener('click', function(e) {
 			/* When an item is clicked, update the original select box,

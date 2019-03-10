@@ -1,5 +1,16 @@
 .questions
 	+gradient(-290px, 1550px)
+	padding: 0 80px
+	&__content
+		max-width: 1120px
+	+max-screen($breakpoint-md)
+		+gradient(-290px, 2572px)
+		padding: 0 40px
+	+max-screen($breakpoint-sm)
+		+gradient(-350px, 2572px)
+		padding: 0 20px
+		&__title
+			font-size: 42px
 
 .questions-list
 	display: flex
@@ -7,6 +18,8 @@
 	justify-content: space-between
 	margin-top: 55px
 	border-top: 1px solid rgba($gray, 0.1)
+	+max-screen($breakpoint-sm)
+		margin-top: 40px
 
 .question
 	width: 48%
@@ -20,3 +33,11 @@
 	&__text
 		max-width: 90%
 		color: $light-gray
+	+max-screen($breakpoint-md)
+		width: 100%
+	+max-screen($breakpoint-sm)
+		padding: 35px 0
+		&__title
+			max-width: 90%
+		&__text
+			max-width: none

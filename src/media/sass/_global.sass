@@ -110,11 +110,15 @@
 	font-size: 144px
 	line-height: 0.9
 	letter-spacing: -4px
+	+max-screen($breakpoint-sm)
+		font-size: 80px
 
 .title-md
 	+Ubuntu(500)
 	font-size: 52px
 	line-height: 0.96
+	+max-screen($breakpoint-sm)
+		font-size: 36px
 
 .title-sm
 	+Ubuntu(500)
@@ -135,8 +139,9 @@
 	@extend .animated
 	color: $accent
 	&:hover
-		color: #677780
-		text-decoration: underline
+		._desktop &
+			color: #677780
+			text-decoration: underline
 
 .btn
 	@extend .animated
@@ -165,27 +170,25 @@
 		border: 1px solid $accent
 		background-image: linear-gradient(to right top, $accent, #FFAA33)
 	&:hover
-		cursor: pointer
-		&:after
-			opacity: 0
+		._desktop &
+			cursor: pointer
+			&:after
+				opacity: 0
 	&:active,
 	&:focus
 		outline: none
 	&._empty
 		color: $accent
 		border: 1px solid $accent
+		text-decoration: none
 		background: none
 		&:after
 			opacity: 0
 		&:hover
-			color: #FFFFFF
-			border-color: $light-gray
-			background: $light-gray
-	+max-screen($breakpoint-md)
-		padding: 10px 8px
-	+max-screen($breakpoint-sm)
-		padding: 5px 10px
-		font-size: 14px
+			._desktop &
+				color: #FFFFFF
+				border-color: $light-gray
+				background: $light-gray
 	&._link-btn
 		color: $gray
 		background: none
@@ -194,9 +197,12 @@
 		&:after
 			opacity: 0
 		&:hover
-			color: currentColor
-			box-shadow: none
-			text-decoration-color: currentColor
+			._desktop &
+				color: currentColor
+				box-shadow: none
+				text-decoration-color: currentColor
+	+max-screen($breakpoint-sm)
+		padding: 15px 10px
 
 ._flag
 	display: inline-block

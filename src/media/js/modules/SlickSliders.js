@@ -15,21 +15,12 @@ const OPTIONS_BY_TYPE = {
 		autoplaySpeed: 10000,
 		fade: true,
 		infinite: true,
-		draggable: true,
+		draggable: false,
 		slidesToScroll: 1,
 		slidesToShow: 1,
 		dots: true,
 		arrows: true,
 		zIndex: 0,
-		responsive: [
-			{
-				breakpoint: 900,
-				settings: {
-					dots: false,
-					arrows: false,
-				},
-			},
-		],
 	},
 	solutionsSlider: {
 		fade: true,
@@ -41,9 +32,9 @@ const OPTIONS_BY_TYPE = {
 		zIndex: 0,
 		responsive: [
 			{
-				breakpoint: 900,
+				breakpoint: 1025,
 				settings: {
-					dots: false,
+					dots: true,
 					arrows: false,
 				},
 			},
@@ -61,9 +52,9 @@ const OPTIONS_BY_TYPE = {
 		zIndex: 0,
 		responsive: [
 			{
-				breakpoint: 900,
+				breakpoint: 1025,
 				settings: {
-					dots: false,
+					dots: true,
 					arrows: false,
 				},
 			},

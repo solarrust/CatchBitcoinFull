@@ -1,10 +1,17 @@
 .opinions
+	padding: 0 80px
 	margin-bottom: 90px
 	&__content
 		position: relative
 		overflow: hidden
+		max-width: 1120px
 		border-radius: 5px
 		background-color: $almost-white
+	+max-screen($breakpoint-md)
+		padding: 0 40px
+	+max-screen($breakpoint-sm)
+		padding: 0 20px
+		margin-bottom: 75px
 
 .opinions-slider
 	& .slick-dots
@@ -12,6 +19,14 @@
 		left: 40%
 		bottom: 50px
 		z-index: 2
+	+max-screen($breakpoint-md)
+		& .slick-dots
+			left: auto
+			right: 40px
+	+max-screen($breakpoint-sm)
+		& .slick-dots
+			right: 20px
+			bottom: 20px
 
 .opinion
 	+box
@@ -26,8 +41,8 @@
 		width: 40%
 		height: 100%
 	&__img
-		min-width: 100%
-		height: 100%
+		width: 100%
+		min-height: 100%
 		object-fit: cover
 	&__content
 		+box
@@ -64,4 +79,42 @@
 			height: 42px
 			fill: currentColor
 		&:hover
-			color: $light-gray
+			._desktop &
+				color: $light-gray
+	+max-screen($breakpoint-md)
+		&__container
+			+box
+			align-items: flex-end
+			padding-top: 50px
+		&__content
+			align-self: flex-start
+			width: auto
+			height: 65%
+			padding-right: 50px
+			margin-left: 0
+		&__img-block
+			flex: 0 0 auto
+			height: 65%
+		&__play
+			top: auto
+			bottom: 110px
+			right: 40px
+	+max-screen($breakpoint-sm)
+		&__container
+			flex-direction: column-reverse
+			align-items: flex-start
+			padding: 0
+		&__content
+			height: auto
+		&__name
+			margin-top: 0
+			margin-bottom: 20px
+			padding-left: 20px
+		&__text
+			padding: 20px
+			font-size: 16px
+		&__img-block
+			height: auto
+			max-height: 240px
+			width: 80%
+

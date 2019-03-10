@@ -15,6 +15,14 @@
 		line-height: 1.4
 		text-align: right
 		text-transform: uppercase
+	+max-screen($breakpoint-md)
+		&__content
+			padding: 40px 40px 70px
+	+max-screen($breakpoint-sm)
+		&__content
+			padding: 40px 20px 50px
+		&__note
+			margin-bottom: 40px
 
 .solutions-slider
 	position: relative
@@ -24,7 +32,7 @@
 		top: 170px
 		display: flex
 		flex-direction: column
-		z-index: 1000
+		z-index: 3
 	&__arrow
 		&._prev,
 		&._next
@@ -59,6 +67,13 @@
 				color: #FFFFFF
 				&:after
 					width: 100%
+	+max-screen($breakpoint-md)
+		&__arrows
+			display: none
+		&__titles
+			display: none
+		& .slick-dots
+			margin-top: 35px
 
 .solutions-slide
 	height: 100%
@@ -80,3 +95,17 @@
 		border-top: 1px solid rgba(#fff, 0.2)
 	&__text
 		max-width: 75%
+	+max-screen($breakpoint-md)
+		&__title
+			font-size: 100px
+		&__content
+			margin-top: 40px
+		&__text
+			max-width: 100%
+			padding-right: 20px
+	+max-screen($breakpoint-sm)
+		&__title
+			font-size: 48px
+		&__text
+			padding-right: 10px
+			font-size: 14px

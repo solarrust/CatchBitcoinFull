@@ -41,7 +41,7 @@
 					<h3 class="key-benefits__title title-sm">We&nbsp;work with BTC sellers directly and without intermediaries.</h3>
 					<p class="key-benefits__text" data-switcher-tab="3">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
 				</div>
-				<button class="btn _plus key-benefits__btn" data-accord-opener>+</button>
+				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
 			<div class="key-benefits__item" data-switcher-tab-opener="4">
 				<div class="key-benefits__icon">
@@ -52,7 +52,7 @@
 					<h3 class="key-benefits__title title-sm">We&nbsp;connect sellers with volumes from 10,000 coins for sale.</h3>
 					<p class="key-benefits__text" data-switcher-tab="4">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
 				</div>
-				<button class="btn _plus key-benefits__btn" data-accord-opener>+</button>
+				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
 			<div class="key-benefits__item" data-switcher-tab-opener="5">
 				<div class="key-benefits__icon">
@@ -63,7 +63,7 @@
 					<h3 class="key-benefits__title title-sm">Each seller has a&nbsp;1% discount agreement for the mandate&nbsp;/ agent on&nbsp;the buyer&rsquo;s side.</h3>
 					<p class="key-benefits__text" data-switcher-tab="5">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
 				</div>
-				<button class="btn _plus key-benefits__btn" data-accord-opener>+</button>
+				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
 		</div>
 	</div>

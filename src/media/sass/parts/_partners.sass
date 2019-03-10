@@ -1,10 +1,21 @@
 .partners
-	padding-top: 80px
+	margin-top: 80px
+	padding: 0 80px
+	&__content
+		max-width: 1120px
 	&__title
 		margin-bottom: 20px
 		color: $gray
 		font-size: 14px
 		text-transform: uppercase
+	+max-screen($breakpoint-md)
+		padding: 0
+		&__title
+			padding-left: 40px
+			margin-bottom: 10px
+	+max-screen($breakpoint-sm)
+		&__title
+			padding-left: 20px
 
 .partners-list
 	display: flex
@@ -27,4 +38,12 @@
 		width: 100%
 		height: 100%
 		filter: grayscale(100%)
+	+max-screen($breakpoint-md)
+		width: 25%
+		&:nth-child(n+9)
+			display: none
+		&:nth-child(7n)
+			border-left: 1px solid $almost-white
+	+max-screen($breakpoint-sm)
+		width: 50%
 

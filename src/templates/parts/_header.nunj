@@ -27,15 +27,18 @@
 				</select>
 			</div>
 		</div>
-		<div class="container-block">
+		<div class="container-block rates _desk">
 			<p class="header__rate rate"><span class="_accent">Bitcoin (BTC)</span> = $3 971,36 </p>
 			<p class="header__rate rate"><span class="_accent">Sellers Supply</span> = 502 042 BTC </p>
 		</div>
 		<div class="container-block">
-			<a href="#" class="header__link">Sign in</a>
+			<a href="#" class="header__link _sign">Sign in</a>
 			<nav class="header__menu menu">
 				<button class="btn _get" data-popup-opener="contact-form">Get Started</button>
 			</nav>
+			<button class="header__burger burger" data-popup-opener="mobile-menu">
+				<div class="burger__line"></div>
+			</button>
 		</div>
 	</div>
 	<div class="header__container container">
@@ -45,6 +48,10 @@
 				<span class="_accent">Bitcoins</span>
 			</h1>
 			<p class="description header__description">Best Price. No Limits. Zero Risks.</p>
+			<div class="container-block rates _mobile">
+				<p class="header__rate rate"><span class="_accent">Bitcoin (BTC)</span> = $3 971,36 </p>
+				<p class="header__rate rate"><span class="_accent">Sellers Supply</span> = 502 042 BTC </p>
+			</div>
 		</div>
 	</div>
 	<div class="header__container container">

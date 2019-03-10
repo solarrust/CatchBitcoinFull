@@ -24,6 +24,10 @@ for (let i = 0; i < $numInput.length; i++) {
 			TweenMax.to($(e.currentTarget).siblings($error), 0.15, { alpha: 0 });
 		}
 	});
+
+	$numInput.eq(i).on('blur', function(e) {
+		TweenMax.to($(e.currentTarget).siblings($error), 0.15, { alpha: 0 });
+	});
 }
 
 $btcInput.on('input', function() {

@@ -1,9 +1,17 @@
 .want
-	padding: 40px 80px 0
+	padding: 0 80px
+	margin-bottom: 95px
+	+max-screen($breakpoint-md)
+		padding: 0 40px
+	+max-screen($breakpoint-sm)
+		padding: 0 20px
+		margin-bottom: 85px
 
 .want-container
 	display: flex
 	flex-wrap: nowrap
+	+max-screen($breakpoint-sm)
+		flex-direction: column
 
 .want-block
 	@extend .animated
@@ -34,16 +42,17 @@
 		background-image: linear-gradient(to right top, $accent, #FFAA33)
 		z-index: 0
 	&:hover
-		&:after
-			opacity: 1
-		& .want-block__title ._accent,
-		& .want-block__btn,
-		& .want-block__text,
-		& .want-block__icon svg
-			color: #fff
-			fill: #fff
-		& .want-block__btn
-			text-decoration: underline
+		._desktop &
+			&:after
+				opacity: 1
+			& .want-block__title ._accent,
+			& .want-block__btn,
+			& .want-block__text,
+			& .want-block__icon svg
+				color: #fff
+				fill: #fff
+			& .want-block__btn
+				text-decoration: underline
 	& *
 		z-index: 1
 	&__icon
@@ -64,3 +73,22 @@
 	&__btn
 		margin-top: 20px
 		transition: none
+	+max-screen($breakpoint-md)
+		padding: 35px 40px
+		&__icon
+			margin-bottom: 20px
+	+max-screen($breakpoint-sm)
+		width: 100%
+		height: 275px
+		padding: 20px
+		text-align: left
+		&__icon
+			margin: 0 0 10px
+		&__text
+			width: 90%
+			max-width: none
+			margin: 0
+		&__btn
+			padding: 0
+			margin-top: 15px
+			text-align: left
