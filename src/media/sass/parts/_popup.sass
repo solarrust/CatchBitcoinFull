@@ -38,7 +38,7 @@
 	position: relative
 	height: 100%
 	padding: 20px 80px 40px
-	margin: 0 auto
+	margin: auto
 	box-sizing: border-box
 	background-image: linear-gradient(to top left, rgba(#A1773D, 0.8) 0%, rgba(#0A0500, 0.8) 83%)
 	&__container
@@ -48,6 +48,9 @@
 		height: 100%
 	&__text
 		min-height: 65vh
+	&__form
+		display: flex
+		height: 100%
 	+max-screen($breakpoint-md)
 		padding: 40px
 	+max-screen($breakpoint-sm)

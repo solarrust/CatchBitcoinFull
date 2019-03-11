@@ -17,10 +17,10 @@
 		text-transform: uppercase
 	+max-screen($breakpoint-md)
 		&__content
-			padding: 40px 40px 70px
+			padding: 40px 40px 140px
 	+max-screen($breakpoint-sm)
 		&__content
-			padding: 40px 20px 50px
+			padding: 40px 20px 140px
 		&__note
 			margin-bottom: 40px
 
@@ -71,9 +71,28 @@
 		&__arrows
 			display: none
 		&__titles
-			display: none
+			flex-direction: row
+			width: 100%
+			bottom: -100px
+			align-items: center
+			justify-content: space-between
+			& .slider-title
+				text-align: center
+				color: #fff
+				&:not(:first-child)
+					margin-top: 5px
+				&._active
+					color: $accent
+					&:after
+						width: 0
 		& .slick-dots
 			margin-top: 35px
+	+max-screen($breakpoint-sm)
+		&__titles
+			flex-direction: column
+			align-items: flex-start
+			& .slider-title
+				text-align: left
 
 .solutions-slide
 	height: 100%

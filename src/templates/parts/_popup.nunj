@@ -77,7 +77,7 @@
 				</span>
 			</div>
 			<div class="menu-popup__btns-block">
-				<a href="#" class="btn _empty">Sign in</a>
+				{#<a href="#" class="btn _empty">Sign in</a>#}
 				<button class="btn _get" data-popup-opener="contact-form">Get Started</button>
 			</div>
 			<div class="menu-popup__contact-block">
@@ -119,30 +119,30 @@
 				</ul>
 			</div>
 			<div class="menu-popup__lang-block">
-				<div class="menu-popup__select lang-select">
-					<select class="select">
-						<option value="En">
-							<svg><use xlink:href="#icon-en"></use></svg>
-							En
-						</option>
-						<option value="Ja">
-							<svg><use xlink:href="#icon-ja"></use></svg>
-							Ja
-						</option>
-						<option value="Ch">
-							<svg><use xlink:href="#icon-ch"></use></svg>
-							Ch
-						</option>
-						<option value="Ru">
-							<svg><use xlink:href="#icon-ru"></use></svg>
-							Ru
-						</option>
-						<option value="Ko">
-							<svg><use xlink:href="#icon-ko"></use></svg>
-							Ko
-						</option>
-					</select>
-				</div>
+				{#<div class="menu-popup__select lang-select">#}
+					{#<select class="select">#}
+						{#<option value="En">#}
+							{#<svg><use xlink:href="#icon-en"></use></svg>#}
+							{#En#}
+						{#</option>#}
+						{#<option value="Ja">#}
+							{#<svg><use xlink:href="#icon-ja"></use></svg>#}
+							{#Ja#}
+						{#</option>#}
+						{#<option value="Ch">#}
+							{#<svg><use xlink:href="#icon-ch"></use></svg>#}
+							{#Ch#}
+						{#</option>#}
+						{#<option value="Ru">#}
+							{#<svg><use xlink:href="#icon-ru"></use></svg>#}
+							{#Ru#}
+						{#</option>#}
+						{#<option value="Ko">#}
+							{#<svg><use xlink:href="#icon-ko"></use></svg>#}
+							{#Ko#}
+						{#</option>#}
+					{#</select>#}
+				{#</div>#}
 			</div>
 		</div>
 	</div>

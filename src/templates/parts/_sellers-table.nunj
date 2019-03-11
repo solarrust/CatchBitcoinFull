@@ -14,19 +14,19 @@
 						<button class="pag-list__btn _empty table__btn _active">1</button>
 					</li>
 					<li class="pag-list__item">
-						<button class="pag-list__btn _empty table__btn">2</button>
+						<button class="pag-list__btn _empty table__btn"  data-popup-opener="contact-form">2</button>
 					</li>
 					<li class="pag-list__item">
-						<button class="pag-list__btn _empty table__btn">3</button>
+						<button class="pag-list__btn _empty table__btn"  data-popup-opener="contact-form">3</button>
 					</li>
 					<li class="pag-list__item">
-						<button class="pag-list__btn _empty table__btn">4</button>
+						<button class="pag-list__btn _empty table__btn"  data-popup-opener="contact-form">4</button>
 					</li>
 					<li class="pag-list__item">
-						<button class="pag-list__btn _empty table__btn">5</button>
+						<button class="pag-list__btn _empty table__btn"  data-popup-opener="contact-form">5</button>
 					</li>
 					<li class="pag-list__item">
-						<button class="pag-list__btn _empty table__btn">⟶</button>
+						<button class="pag-list__btn _empty table__btn"  data-popup-opener="contact-form">⟶</button>
 					</li>
 				</ul>
 			</div>
@@ -48,41 +48,41 @@
 					<td>An*****iy <span class="table__rating">(143)</span></td>
 					<td>$3873</td>
 					<td class="_hide">50-200 BTC</td>
-					<td class="_hide"><a href="#" class="table__link link">link to satoshi test</a></td>
+					<td class="_hide"><a href="#" class="table__link link"  data-popup-opener="contact-form">link to satoshi test</a></td>
 					<td class="_hide">HSBC</td>
-					<td><button class="btn _empty table__btn">Purchase</button></td>
+					<td><button class="btn _empty table__btn"  data-popup-opener="contact-form">Purchase</button></td>
 				</tr>
 				<tr class="table__row">
 					<td>Mar***on <span class="table__rating">(99)</span></td>
 					<td>$3879</td>
 					<td class="_hide">30-75 BTC</td>
-					<td class="_hide"><a href="#" class="table__link link">link to satoshi test</a></td>
+					<td class="_hide"><a href="#" class="table__link link"  data-popup-opener="contact-form">link to satoshi test</a></td>
 					<td class="_hide">Barclays</td>
-					<td><button class="btn _empty table__btn">Purchase</button></td>
+					<td><button class="btn _empty table__btn"  data-popup-opener="contact-form">Purchase</button></td>
 				</tr>
 				<tr class="table__row">
 					<td>Vale****y <span class="table__rating">(86)</span></td>
 					<td>$3883</td>
 					<td class="_hide">25-500 BTC</td>
-					<td class="_hide"><a href="#" class="table__link link">link to satoshi test</a></td>
+					<td class="_hide"><a href="#" class="table__link link"  data-popup-opener="contact-form">link to satoshi test</a></td>
 					<td class="_hide">Citi Bank</td>
-					<td><button class="btn _empty table__btn">Purchase</button></td>
+					<td><button class="btn _empty table__btn"  data-popup-opener="contact-form">Purchase</button></td>
 				</tr>
 				<tr class="table__row">
 					<td>Al****r <span class="table__rating">(1 239)</span></td>
 					<td>$3891</td>
 					<td class="_hide">25-500 BTC</td>
-					<td class="_hide"><a href="#" class="table__link link">link to satoshi test</a></td>
+					<td class="_hide"><a href="#" class="table__link link"  data-popup-opener="contact-form">link to satoshi test</a></td>
 					<td class="_hide">Citi Bank</td>
-					<td><button class="btn _empty table__btn">Purchase</button></td>
+					<td><button class="btn _empty table__btn"  data-popup-opener="contact-form">Purchase</button></td>
 				</tr>
 				<tr class="table__row">
 					<td>Qfa****ty <span class="table__rating">(394)</span></td>
 					<td>$3891</td>
 					<td class="_hide">25-500 BTC</td>
-					<td class="_hide"><a href="#" class="table__link link">link to satoshi test</a></td>
+					<td class="_hide"><a href="#" class="table__link link"  data-popup-opener="contact-form">link to satoshi test</a></td>
 					<td class="_hide">Citi Bank</td>
-					<td><button class="btn _empty table__btn">Purchase</button></td>
+					<td><button class="btn _empty table__btn"  data-popup-opener="contact-form">Purchase</button></td>
 				</tr>
 				</tbody>
 			</table>

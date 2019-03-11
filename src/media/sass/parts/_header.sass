@@ -1,22 +1,33 @@
 .header
 	+box
+	position: relative
 	display: flex
 	flex-direction: column
 	min-width: 320px
 	height: 100vh
-	min-height: 800px
+	//min-height: 800px
 	overflow: hidden
 	padding: 20px 80px 100px
 	color: #FFFFFF
 	background:
 		color: #6e7881
-		image: inline("bkg.jpg")
+		image: url("../img/bkg.jpg")
 		repeat: no-repeat
 		position: center
 		size: cover
+	transition: height 0.1s
 	+retina
 		background:
-			image: inline("bkg@2x.jpg")
+			image: url("../img/bkg@2x.jpg")
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			display: block
+			width: 100%
+			height: 100%
+			background-image: linear-gradient(to bottom, rgba(#000, 0.5), rgba(#000, 0.01))
 	&__container
 		@extend .animated
 		display: flex
@@ -25,9 +36,7 @@
 		width: 100%
 		max-width: 1120px
 		margin: 0 auto
-		&:nth-of-type(2)
-			flex-grow: 0.8
-		&:last-of-type
+		&:nth-child(2)
 			flex-grow: 1
 	&__select
 		margin-left: 20px
@@ -58,26 +67,38 @@
 			margin-right: 25px
 	&__slider
 		width: 100%
+	& .slider-title
+		&:not(:last-child)
+			margin-right: 20px
 	+max-screen($breakpoint-md)
 		justify-content: space-between
-		min-height: 900px
+		//min-height: 900px
 		padding: 30px 30px 75px
 		&__container
 			&:nth-of-type(2)
 				align-items: flex-start
+				flex-grow: 0
+			//&:last-of-type
+				//flex-grow: 1
 		&__content
-			margin: auto
+			margin: auto 0
 		&__title
-			max-width: 66%
+			max-width: 55%
 			margin-left: -6px
+			font-size: 102px
 		&__description
 			position: static
 			margin-bottom: 15px
-	& .slider-title
-		&:not(:last-child)
-			margin-right: 20px
+		&__slider
+			display: flex
+			justify-content: center
+		& .slider-title
+			&:not(:last-child)
+				margin-right: 0
+		& .slick-slider
+			max-width: 70vw
 	+max-screen($breakpoint-sm)
-		padding: 25px 20px 45px
+		padding: 25px 20px 25px
 		&__select
 			display: none
 		&__link
@@ -86,13 +107,22 @@
 		&__burger
 			display: block
 			margin-left: 20px
+		&__title
+			max-width: 100%
+			margin-top: 20px
+			font-size: 50px
 		&__description
-			margin-top: 25px
+			margin-top: 5px
 		&__slider
+			flex-direction: column
 			margin-top: 35px
 			margin-left: -20px
 			padding: 0 20px
-			border-top: 1px solid rgba(#FFF, 0.2)
+			//border-top: 1px solid rgba(#FFF, 0.2)
+		& .slick-slider
+			max-width: none
+		& .slick-dots
+			margin-top: 0
 
 .container-block
 	display: flex
@@ -101,6 +131,7 @@
 
 .logo
 	width: 150px
+	z-index: 1
 	+max-screen($breakpoint-md)
 		width: 120px
 
@@ -136,11 +167,19 @@
 	margin-bottom: 30px
 	border-bottom: 1px solid rgba(#FFF, 0.2)
 	+max-screen($breakpoint-md)
+		flex: 0 0 auto
+		overflow: visible
 		max-width: 100vw
-		margin: 0 -30px
-		padding: 0 40px 15px
+		margin-right: 15px
+		padding: 0 15px 15px
+		border-bottom: none
+		border-right: 1px solid rgba(#FFF, 0.2)
 	+max-screen($breakpoint-sm)
-		display: none
+		flex-direction: column
+		flex-wrap: wrap
+		margin: 0 -20px 5px
+		padding: 0 20px 15px
+		border-right: none
 
 .slide
 	+box
@@ -169,7 +208,7 @@
 		font-size: 16px
 		line-height: 1.7
 	+max-screen($breakpoint-md)
-		max-width: 80vw
+		max-width: 60vw
 		padding: 30px 0
 		&__content
 			flex-direction: column
@@ -179,14 +218,18 @@
 			width: 100%
 			max-width: none
 		&__name
-			margin-bottom: 25px
+			display: none
 		&__title
 			margin-bottom: 15px
 	+max-screen($breakpoint-sm)
 		max-width: 90vw
-		padding: 25px 0
-		&__name
-			margin-bottom: 20px
+		padding: 0 0 25px
+		&__title
+			padding-bottom: 10px
+			font-size: 18px
+			border-bottom: 1px solid rgba(#FFF, 0.2)
+		&__text
+			font-size: 13px
 
 .slider-arrows
 	display: flex
@@ -196,8 +239,23 @@
 	width: 18%
 	margin-right: 30px
 	+max-screen($breakpoint-md)
-		width: auto
-		margin-right: 15px
+		position: absolute
+		left: 223px
+		font-size: 11px
+		color: $accent
+		font-weight: bold
+		&:after
+			content: '/05'
+			display: inline-block
+			color: #FFFFFF
+			font-size: 8px
+	+max-screen($breakpoint-sm)
+		left: 20px
+		top: 65px
+
+.slider-arrow
+	+max-screen($breakpoint-md)
+		display: none
 
 .slider-titles
 	//position: absolute
@@ -211,7 +269,15 @@
 		position: relative
 		overflow: hidden
 		flex-grow: 1
-
+	+max-screen($breakpoint-md)
+		flex-direction: column
+		align-items: flex-end
+		justify-content: center
+	+max-screen($breakpoint-sm)
+		justify-content: flex-start
+		flex-direction: row
+		flex-wrap: wrap
+		font-size: 12px
 
 .slider-title
 	@extend .animated
@@ -235,13 +301,24 @@
 		@extend .no-pe
 		&:after
 			width: 100%
+	+max-screen($breakpoint-md)
+		margin-bottom: 10px
+		&._active
+			color: $accent
+			&:after
+				width: 0
+	+max-screen($breakpoint-sm)
+		width: 50%
+		margin-bottom: 2px
+		text-align: left
 
 .rates
+	z-index: 1
 	&._mobile
 		display: none
 		position: absolute
 		top: 35px
-		left: 265px
+		left: 185px
 		flex-direction: column
 		align-items: flex-start
 	+max-screen($breakpoint-md)
@@ -252,7 +329,6 @@
 	+max-screen($breakpoint-sm)
 		&._mobile
 			position: static
-			margin-top: 30px
 
 .burger
 	position: relative

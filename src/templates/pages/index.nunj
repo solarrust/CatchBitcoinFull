@@ -1,6 +1,6 @@
 {% extends "../ext/base.nunj" %}
 
-{% block title %}Temporary page {{ super() }}{% endblock title %}
+{% block title %}Main page {{ super() }}{% endblock title %}
 
 {% block content %}
 	<div class="wrapper">

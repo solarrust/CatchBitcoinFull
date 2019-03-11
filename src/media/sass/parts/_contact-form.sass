@@ -3,6 +3,7 @@
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	margin: auto
 	&__content
 		display: flex
 		flex-direction: column
@@ -50,7 +51,6 @@
 			&:after
 				display: none
 	+max-screen($breakpoint-md)
-		margin: auto
 		&__label
 			&:not(:first-of-type)
 				margin-top: 10px

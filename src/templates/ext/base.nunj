@@ -16,6 +16,13 @@
 		<meta name="theme-color" content="#ffffff">
 		<link rel="icon" href="./media/img/favicon/favicon.ico">
 
+		<meta property="og:url" content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+		<meta property="description" content="Best Price. No Limits. Zero Risks." />
+		<meta property="keywords" content="bitcoin" />
+		<meta property="og:title" content="Catch Bitcoin" />
+		<meta property="og:description" content="Best Price. No Limits. Zero Risks." />
+		<meta property="og:image" content="./media/img/logo-black.svg" />
+
 		{{ headScripts() }}
 
 		{% block stylesheets %}

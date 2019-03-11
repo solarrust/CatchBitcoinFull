@@ -12,7 +12,7 @@ const OPTIONS_BY_TYPE = {
 	},
 	header: {
 		autoplay: true,
-		autoplaySpeed: 10000,
+		autoplaySpeed: 3500,
 		fade: true,
 		infinite: true,
 		draggable: false,
@@ -21,6 +21,14 @@ const OPTIONS_BY_TYPE = {
 		dots: true,
 		arrows: true,
 		zIndex: 0,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					arrows: false,
+				},
+			},
+		],
 	},
 	solutionsSlider: {
 		fade: true,

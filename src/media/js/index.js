@@ -25,6 +25,7 @@ global.ProjectName = new function ProjectName() { // eslint-disable-line
 		LangSelect: require('./modules/LangSelect'),
 		Switchers: require('./modules/Switchers'),
 		Convert: require('./modules/Convert'),
+		Header: require('./modules/Header'),
 	};
 
 	// Startup

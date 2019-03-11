@@ -20,7 +20,7 @@
 					<input type="number" class="convert-form__input" pattern="[0-9]*"  placeholder="Total Price" value="" data-convert-result data-num>
 					<div class="convert-form__error _error">Numbers only</div>
 				</label>
-				<button class="btn convert-form__btn">Purchase BTC</button>
+				<button class="btn convert-form__btn"  data-popup-opener="contact-form">Purchase BTC</button>
 			</div>
 		</div>
 	</div>

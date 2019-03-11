@@ -12,7 +12,6 @@ for (i = 0; i < x.length; i++) {
 		)}"></use></svg>` + selElmnt.options[selElmnt.selectedIndex].innerHTML;
 	x[i].appendChild(a);
 
-	console.log($.trim(selElmnt.options[selElmnt.selectedIndex].innerHTML.toLowerCase()));
 	/* For each element, create a new div that will contain the option list: */
 	b = document.createElement('div');
 	b.setAttribute('class', 'select-items select-hide');
