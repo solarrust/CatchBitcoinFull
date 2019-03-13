@@ -6,40 +6,40 @@
 				<span class="_accent">Benefits</span>
 			</h2>
 			<p class="key__description text">
-				BTC and automation of&nbsp;work with customers. We&nbsp;have combined the best elements of&nbsp;the wholesale and retail segments of&nbsp;the cryptocurrency purchase and sale market.
+				We&nbsp;have combined the advantages of&nbsp;OTC market with the advantages of&nbsp;retail market in&nbsp;one service
 			</p>
 		</div>
 		<div class="key-benefits key__benefits" data-switcher data-switcher-mode="acc">
 			<div class="key-benefits__item" data-switcher-tab-opener="1">
 				<div class="key-benefits__icon">
-					<svg><use xlink:href="#icon-security"></use></svg>
+					<svg><use xlink:href="#icon-price"></use></svg>
 				</div>
 				<div class="key-benefits__content">
-					<h4 class="key-benefits__name _accent">Security</h4>
-					<h3 class="key-benefits__title title-sm">Each of&nbsp;the sellers presented underwent the procedure: KYC, AML, Proof of&nbsp;Coins, as&nbsp;well as&nbsp;checking the purity of&nbsp;the coins.</h3>
-					<p class="key-benefits__text" data-switcher-tab="1">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
+					<h4 class="key-benefits__name _accent">Price</h4>
+					<h3 class="key-benefits__title title-sm">We&nbsp;work with BTC sellers directly, without intermediaries.</h3>
+					<p class="key-benefits__text" data-switcher-tab="1">By&nbsp;offering guaranteed sales in&nbsp;the shortest possible time span, we&nbsp;are able to&nbsp;obtain wholesale pricing and in&nbsp;this way secure the best terms for retail buyers. We&nbsp;use bank transfers for payments, so&nbsp;we&nbsp;don&rsquo;t price in&nbsp;potential risks into our rates&nbsp;&mdash; and that means that coins are sold without any markups.</p>
 				</div>
 				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
 			<div class="key-benefits__item" data-switcher-tab-opener="2">
 				<div class="key-benefits__icon">
-					<svg><use xlink:href="#icon-simple"></use></svg>
+					<svg><use xlink:href="#icon-security"></use></svg>
 				</div>
 				<div class="key-benefits__content">
-					<h4 class="key-benefits__name _accent">Simple</h4>
-					<h3 class="key-benefits__title title-sm">Due to&nbsp;the simplified procedure for conducting a&nbsp;transaction, the acquisition of&nbsp;coins fits into three steps and can be&nbsp;completed in&nbsp;a&nbsp;few minutes.</h3>
-					<p class="key-benefits__text" data-switcher-tab="2">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
+					<h4 class="key-benefits__name _accent">Security</h4>
+					<h3 class="key-benefits__title title-sm">Each of&nbsp;our sellers has undergone the KYC, AML, and Proof of&nbsp;Coins procedures, and their coins have been checked for legitimacy.</h3>
+					<p class="key-benefits__text" data-switcher-tab="2">We&nbsp;have official agreements signed with each seller. As&nbsp;part of&nbsp;our service, bitcoins for each confirmed transaction are deposited into our own account. We&nbsp;do&nbsp;not store coins in&nbsp;external wallets&nbsp;&mdash; to&nbsp;complete the transaction, you give&nbsp;us your own wallet address to&nbsp;which BTC will be&nbsp;deposited.</p>
 				</div>
 				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
 			<div class="key-benefits__item" data-switcher-tab-opener="3">
 				<div class="key-benefits__icon">
-					<svg><use xlink:href="#icon-price"></use></svg>
+					<svg><use xlink:href="#icon-simple"></use></svg>
 				</div>
 				<div class="key-benefits__content">
-					<h4 class="key-benefits__name _accent">Price</h4>
-					<h3 class="key-benefits__title title-sm">We&nbsp;work with BTC sellers directly and without intermediaries.</h3>
-					<p class="key-benefits__text" data-switcher-tab="3">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
+					<h4 class="key-benefits__name _accent">Simplicity</h4>
+					<h3 class="key-benefits__title title-sm">Our procedures are so&nbsp;streamlined that the entire process of&nbsp;purchasing bitcoins can be&nbsp;completed in&nbsp;just a&nbsp;few minutes.</h3>
+					<p class="key-benefits__text" data-switcher-tab="3">To&nbsp;buy coins, you will need to&nbsp;indicate their amount, confirm the wallet address in&nbsp;which you would like to&nbsp;have them deposited, and confirm the receipt (in&nbsp;free form). The system will automatically generate an&nbsp;invoice, a&nbsp;contract, and payment instructions. Our customer support and personal account manager service is&nbsp;open 24/7.</p>
 				</div>
 				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
@@ -48,9 +48,9 @@
 					<svg><use xlink:href="#icon-volumes"></use></svg>
 				</div>
 				<div class="key-benefits__content">
-					<h4 class="key-benefits__name _accent">Volumes</h4>
-					<h3 class="key-benefits__title title-sm">We&nbsp;connect sellers with volumes from 10,000 coins for sale.</h3>
-					<p class="key-benefits__text" data-switcher-tab="4">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
+					<h4 class="key-benefits__name _accent">Volume</h4>
+					<h3 class="key-benefits__title title-sm">We&nbsp;engage sellers who have a&nbsp;minimum of&nbsp;10,000&nbsp;BTC available for sale.</h3>
+					<p class="key-benefits__text" data-switcher-tab="4">For many sellers, they have on&nbsp;average over 100,000&nbsp;BTC at&nbsp;their disposal. By&nbsp;working with major suppliers, we&nbsp;can arrange sales of&nbsp;very significant amounts. However, our arrangements are flexible enough to&nbsp;allow a&nbsp;low entry threshold as&nbsp;well.</p>
 				</div>
 				<button class="btn _plus key-benefits__btn">+</button>
 			</div>
@@ -59,9 +59,9 @@
 					<svg><use xlink:href="#icon-yield"></use></svg>
 				</div>
 				<div class="key-benefits__content">
-					<h4 class="key-benefits__name _accent">Yield</h4>
-					<h3 class="key-benefits__title title-sm">Each seller has a&nbsp;1% discount agreement for the mandate&nbsp;/ agent on&nbsp;the buyer&rsquo;s side.</h3>
-					<p class="key-benefits__text" data-switcher-tab="5">At&nbsp;the same time, the average amount per seller exceeds 100,000&nbsp;coins. Working with large wholesale suppliers, we&nbsp;can provide a&nbsp;sale of&nbsp;really serious volume. At&nbsp;the same time, our agreements do&nbsp;not imply a&nbsp;high entry threshold.</p>
+					<h4 class="key-benefits__name _accent">Profits for agents</h4>
+					<h3 class="key-benefits__title title-sm">Our sellers have sign discount agreement, in&nbsp;which they undertake to&nbsp;give a&nbsp;1% discount to&nbsp;an&nbsp;agent.</h3>
+					<p class="key-benefits__text" data-switcher-tab="5">Our service also contains special features for agents, which allows them to&nbsp;generate documents based on&nbsp;the deal&rsquo;s specifics and agent&rsquo;s interests in&nbsp;each particular transaction.</p>
 				</div>
 				<button class="btn _plus key-benefits__btn">+</button>
 			</div>

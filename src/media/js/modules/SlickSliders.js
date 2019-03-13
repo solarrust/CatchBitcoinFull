@@ -31,8 +31,10 @@ const OPTIONS_BY_TYPE = {
 		],
 	},
 	solutionsSlider: {
+		autoplay: true,
+		autoplaySpeed: 3500,
 		fade: true,
-		infinite: false,
+		infinite: true,
 		draggable: true,
 		slidesToScroll: 1,
 		slidesToShow: 1,
